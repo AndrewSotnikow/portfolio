@@ -1,0 +1,544 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTRoman";
+  src: local("Helvetica Neue LT Com 55 Roman"), local("HelveticaNeueLTCom-Roman"), url("../fonts/HelveticaNeueLTCom-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueLTCom-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeueLTBold";
+  src: local("Helvetica Neue LT Com 75 Bold"), local("HelveticaNeueLTCom-Bd"), url("../fonts/HelveticaNeueLTCom-Bd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTCom-Bd.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Medium"), local("Lato-Medium"), url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.section {
+  margin: 0 auto;
+  width: 100%;
+  height: min(100vh, 1080px);
+  max-width: 1920px;
+  background-color: #000;
+  color: #fff;
+  font-family: HelveticaNeueLTRoman, sans-serif;
+}
+
+.nav {
+  width: min(18%, 18vw);
+  margin: 0 auto;
+  padding-top: 3.5rem;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.link {
+  font-size: min(0.7vw, 0.9rem);
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+}
+
+.logo {
+  margin-top: -0.8125rem;
+  margin-left: 4.4rem;
+}
+
+.contentContainer {
+  width: 100%;
+  height: 82.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  align-items: start;
+  justify-content: center;
+}
+
+.textContainerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 12.3%;
+  padding-bottom: 9.4%;
+}
+.textContainerContent div > span {
+  display: inline-block;
+  font-family: HelveticaNeueLTBold, sans-serif;
+  font-size: min(5.07rem, 4.23vw);
+  line-height: min(6rem, 5vw);
+  top: 3%;
+  letter-spacing: 0.16rem;
+}
+.textContainerContent div > span:first-child {
+  position: relative;
+  font-size: min(0.9rem, 0.8vw);
+  line-height: 1;
+  padding-bottom: 2%;
+  letter-spacing: 0.05rem;
+}
+.textContainerContent div > span:nth-child(2) {
+  color: #ffcc00;
+}
+.textContainerContent .text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.textContainerContent p {
+  text-transform: uppercase;
+  width: 63%;
+  line-height: min(1.9rem, 1.55vw);
+  font-size: min(0.76rem, 0.65vw);
+  color: #fff;
+  letter-spacing: 0.16rem;
+  text-align: justify;
+}
+
+.buttons {
+  margin-top: min(4.1rem, 3.3vw);
+  width: 59.5%;
+  padding-left: 0.31rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons > button {
+  width: 39%;
+  height: min(215%, 3.8rem);
+  border-radius: 1.9rem;
+  border: 2px solid #ffcc00;
+  background-color: transparent;
+  font-family: HelveticaNeueLTBold, sans-serif;
+  color: #ffcc00;
+  font-size: min(1vw, 1.15rem);
+  text-transform: uppercase;
+}
+.buttons > button:last-child {
+  background-color: #ffcc00;
+  font-family: HelveticaNeueLTBold, sans-serif;
+  color: #000;
+}
+
+.imageContainer {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  top: -3%;
+  right: 4%;
+}
+.imageContainer .abstract {
+  position: absolute;
+  margin-top: 12.7%;
+  left: 2%;
+  z-index: 0;
+  width: 76%;
+}
+.imageContainer .portrait {
+  position: absolute;
+  z-index: 1;
+  left: 2.1rem;
+  max-width: 84.9%;
+  top: -2.2rem;
+}
+
+.decorFront {
+  position: absolute;
+  top: min(24.6vw, 47.5%);
+  right: min(0.8vw, 2.2%);
+  width: 20%;
+  z-index: 3;
+}
+.decorFront span {
+  font-family: Lato, sans-serif;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: min(1.36vw, 1.5rem);
+  font-size: min(0.6vw, 0.75rem);
+}
+.decorFront span:nth-child(2) {
+  margin: min(1.2vw, 1.56rem) 0;
+}
+
+.decorEnd {
+  position: absolute;
+  bottom: min(5vw, 10.4%);
+  left: min(15.1vw, 37%);
+  z-index: 3;
+}
+.decorEnd span {
+  font-family: HelveticaNeueLTBold, sans-serif;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: min(1.36vw, 1.5rem);
+  font-size: min(0.6vw, 0.75rem);
+  color: #000;
+}
+.decorEnd span:nth-child(2) {
+  margin: min(1.2vw, 1.56rem) 0;
+}
+
+.decorationContainer {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: min(46vw, 100%);
+  max-height: 1080px;
+}
+
+.decoration {
+  position: absolute;
+  z-index: 4;
+  font-size: min(0.9rem, 0.8vw);
+  line-height: 1;
+  transform: rotate(-90deg);
+  letter-spacing: 0.05rem;
+}
+.decoration.positionHtml {
+  top: min(6vw, 13%);
+  left: min(-2.2vw, -5.9%);
+}
+.decoration.positionReact {
+  top: min(1.7vw, 4%);
+  left: min(5.4vw, 13%);
+}
+.decoration.positionScript {
+  top: min(1.7vw, 4%);
+  left: min(25.1vw, 63%);
+  z-index: 1;
+}
+.decoration.positionWebpack {
+  top: min(7vw, 15%);
+  left: min(30.7vw, 76.5%);
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTRoman";
+  src: local("Helvetica Neue LT Com 55 Roman"), local("HelveticaNeueLTCom-Roman"), url("../fonts/HelveticaNeueLTCom-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueLTCom-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeueLTBold";
+  src: local("Helvetica Neue LT Com 75 Bold"), local("HelveticaNeueLTCom-Bd"), url("../fonts/HelveticaNeueLTCom-Bd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTCom-Bd.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Medium"), local("Lato-Medium"), url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.section {
+  margin: 0 auto;
+  width: 100%;
+  height: min(100vh, 1080px);
+  max-width: 1920px;
+  background-color: #fff;
+  color: #000;
+  font-family: HelveticaNeueLTRoman, sans-serif;
+}
+
+.nav {
+  width: 21.5rem;
+  margin: 0 auto;
+  padding-top: 3.5rem;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.link {
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: -0.8125rem;
+  margin-left: 4.4rem;
+}
+
+.contentContainer {
+  width: 100%;
+  height: 82.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 15.3%;
+  height: 64%;
+}
+.textContent span {
+  display: inline-block;
+  font-family: HelveticaNeueLTBold, sans-serif;
+  font-size: min(5.07rem, 4.23vw);
+  line-height: min(6rem, 5vw);
+  letter-spacing: 0.1rem;
+}
+.textContent span:first-child {
+  position: relative;
+  font-size: min(0.9rem, 0.8vw);
+  line-height: 1;
+  padding-bottom: 0.7%;
+  letter-spacing: 0.05rem;
+}
+.textContent span:nth-child(2) {
+  color: #ffcc00;
+}
+.textContent p {
+  text-align: justify;
+  text-transform: uppercase;
+  width: 78%;
+  line-height: min(1.9rem, 1.55vw);
+  font-size: min(0.76rem, 0.65vw);
+  color: #000;
+  letter-spacing: 0.15rem;
+}
+.textContent p a {
+  color: #ffcc00;
+  font-family: HelveticaNeueLTBold, sans-serif;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ffcc00;
+}
+
+.decorationContainer {
+  position: relative;
+  width: 50%;
+  height: min(46vw, 100%);
+  max-height: 1080px;
+}
+
+.decoration {
+  position: absolute;
+  z-index: 4;
+  font-size: min(0.9rem, 0.8vw);
+  line-height: 1;
+  transform: rotate(-90deg);
+  letter-spacing: 0.05rem;
+}
+.decoration.positionHtml {
+  top: min(9vw, 19%);
+  left: min(4.3vw, 8.5%);
+}
+.decoration.positionReact {
+  bottom: min(5.6vw, 12.2%);
+  left: min(11.3vw, 22.8%);
+}
+.decoration.positionScript {
+  bottom: min(5.6vw, 12.2%);
+  right: min(15.8vw, 31.5%);
+}
+.decoration.positionWebpack {
+  top: min(10vw, 21.5%);
+  right: min(9vw, 18%);
+}
+
+.hobbies {
+  margin: 0 auto;
+  display: flex;
+  width: min(33vw, 33%);
+  height: min(7.2vw, 12.5%);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hobbies span:first-child {
+  font-family: HelveticaNeueLTBold, sans-serif;
+  position: relative;
+  font-size: min(0.9rem, 0.8vw);
+  line-height: 1;
+  bottom: 7px;
+  letter-spacing: 0.05rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.text div {
+  width: min(25%, 9vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.text div img {
+  padding-bottom: min(11%, 0.9vw);
+}
+.text span {
+  font-family: HelveticaNeueLTBold, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+}
+.text span:nth-child(3) {
+  padding-top: min(11%, 0.9vw);
+  padding-bottom: min(3%, 0.2vw);
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTRoman";
+  src: local("Helvetica Neue LT Com 55 Roman"), local("HelveticaNeueLTCom-Roman"), url("../fonts/HelveticaNeueLTCom-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueLTCom-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeueLTBold";
+  src: local("Helvetica Neue LT Com 75 Bold"), local("HelveticaNeueLTCom-Bd"), url("../fonts/HelveticaNeueLTCom-Bd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTCom-Bd.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Medium"), local("Lato-Medium"), url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.section {
+  width: 100%;
+  height: 67.5rem;
+  background-color: #000;
+  border: 1px solid red;
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTRoman";
+  src: local("Helvetica Neue LT Com 55 Roman"), local("HelveticaNeueLTCom-Roman"), url("../fonts/HelveticaNeueLTCom-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueLTCom-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeueLTBold";
+  src: local("Helvetica Neue LT Com 75 Bold"), local("HelveticaNeueLTCom-Bd"), url("../fonts/HelveticaNeueLTCom-Bd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTCom-Bd.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Medium"), local("Lato-Medium"), url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.section {
+  width: 100%;
+  height: 67.5rem;
+  background-color: #fff;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

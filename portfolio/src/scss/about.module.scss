@@ -1,0 +1,181 @@
+@import "fonts";
+@import "colors";
+
+.section {
+  margin: 0 auto;
+  width: 100%;
+  height: unquote('min(100vh, 1080px)');
+  max-width: 1920px;
+  background-color: $background-white;
+  color: #000;
+  font-family: $font-regular;
+}
+
+.nav {
+  width: 21.5rem;
+  margin: 0 auto;
+  padding-top: 3.5rem;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.link {
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: -0.8125rem;
+  margin-left: 4.4rem;
+
+}
+
+.contentContainer {
+  width: 100%;
+  height: 82.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.textContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 15.3%;
+  height: 64%;
+
+  span {
+    display: inline-block;
+    font-family: $font-bold;
+    font-size: unquote('min(5.07rem, 4.23vw)');
+    line-height: unquote('min(6rem, 5vw)');
+    letter-spacing: 0.1rem;
+
+    &:first-child {
+      position: relative;
+      font-size: unquote('min(0.9rem, 0.8vw)');
+      line-height: 1;
+      padding-bottom: 0.7%;
+      letter-spacing: 0.05rem;
+    }
+
+    &:nth-child(2) {
+      color: $primary-color;
+    }
+  }
+
+
+  p {
+    text-align: justify;
+    text-transform: uppercase;
+    width: 78%;
+    line-height: unquote('min(1.9rem, 1.55vw)');
+    font-size: unquote('min(0.76rem, 0.65vw)');
+    color: #000;
+    letter-spacing: 0.15rem;
+    a {
+      color: $primary-color;
+      font-family: $font-bold;
+      text-decoration: none;
+      padding-bottom: 3px;
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+}
+
+.decorationContainer {
+  position: relative;
+  width: 50%;
+  height: unquote('min(46vw, 100%)');
+  max-height: 1080px;
+}
+
+.decoration {
+  position: absolute;
+  z-index: 4;
+  font-size: unquote('min(0.9rem, 0.8vw)');
+  line-height: 1;
+  transform: rotate(-90deg);
+  letter-spacing: 0.05rem;
+
+  &.positionHtml {
+    top: unquote('min(9vw, 19%)');
+    left: unquote('min(4.3vw, 8.5%)');
+  }
+
+  &.positionReact {
+    bottom: unquote('min(5.6vw, 12.2%)');
+    left:  unquote('min(11.3vw, 22.8%)');
+  }
+
+  &.positionScript {
+    bottom: unquote('min(5.6vw, 12.2%)');
+    right:  unquote('min(15.8vw, 31.5%)');
+  }
+
+  &.positionWebpack {
+    top: unquote('min(10vw, 21.5%)');
+    right:  unquote('min(9vw, 18%)');
+  }
+}
+
+.hobbies {
+  margin: 0 auto;
+  display: flex;
+  width: unquote('min(33vw, 33%)');
+  height: unquote('min(7.2vw, 12.5%)');
+  flex-direction: column;
+  justify-content: space-between;
+  span:first-child {
+    font-family: $font-bold;
+    position: relative;
+    font-size: unquote('min(0.9rem, 0.8vw)');
+    line-height: 1;
+    bottom: 7px;
+    letter-spacing: 0.05rem;
+  }
+}
+.text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  div{
+    width:unquote('min(25%, 9vw)');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+      padding-bottom: unquote('min(11%, 0.9vw)');
+    }
+  }
+  span{
+    font-family: $font-bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+    &:nth-child(3){
+      padding-top: unquote('min(11%, 0.9vw)');
+      padding-bottom: unquote('min(3%, 0.2vw)');
+    }
+
+  }
+}

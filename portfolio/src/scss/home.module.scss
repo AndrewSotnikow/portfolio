@@ -1,0 +1,247 @@
+@import "fonts";
+@import "colors";
+
+.section {
+  margin: 0 auto;
+  width: 100%;
+  height: unquote('min(100vh, 1080px)');
+  max-width: 1920px;
+  background-color: $background-black;
+  color: #fff;
+  font-family: $font-regular;
+}
+
+.container {
+
+}
+
+.nav {
+  width: unquote('min(18%, 18vw)');
+  margin: 0 auto;
+  padding-top: 3.5rem;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.link {
+
+  font-size: unquote('min(0.7vw, 0.9rem)');
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+}
+
+.logo {
+  margin-top: -0.8125rem;
+  margin-left: 4.4rem;
+
+}
+
+.contentContainer {
+  width: 100%;
+  height: 82.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  align-items: start;
+  justify-content: center;
+}
+
+
+
+.textContainerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 12.3%;
+  padding-bottom: 9.4%;
+
+  div > span {
+    display: inline-block;
+    font-family: $font-bold;
+    font-size: unquote('min(5.07rem, 4.23vw)');
+    line-height: unquote('min(6rem, 5vw)');
+    top: 3%;
+    letter-spacing: 0.16rem;
+
+    &:first-child {
+      position: relative;
+      font-size: unquote('min(0.9rem, 0.8vw)');
+      line-height: 1;
+      padding-bottom: 2%;
+      letter-spacing: 0.05rem;
+    }
+
+    &:nth-child(2) {
+      color: $primary-color;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+  }
+
+  p {
+    text-transform: uppercase;
+    width: 63%;
+    line-height: unquote('min(1.9rem, 1.55vw)');
+    font-size: unquote('min(0.76rem, 0.65vw)');
+    color: #fff;
+    letter-spacing: 0.16rem;
+    text-align: justify;
+  }
+}
+
+
+.buttons {
+  margin-top: unquote('min(4.1rem, 3.3vw)');
+  width: 59.5%;
+  padding-left: .31rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > button {
+    width: 39%;
+    //height: 200%;
+    height: unquote('min(215%, 3.8rem)');
+    border-radius: 1.9rem;
+    border: 2px solid $primary-color;
+    background-color: transparent;
+    font-family: $font-bold;
+    color: $primary-color;
+    font-size: unquote('min(1vw, 1.15rem)');
+    text-transform: uppercase;
+
+    &:last-child {
+      background-color: $primary-color;
+      font-family: $font-bold;
+      color: #000;
+    }
+  }
+}
+
+.imageContainer {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  top: -3%;
+  right: 4%;
+
+  .abstract {
+    position: absolute;
+    margin-top: 12.7%;
+    left: 2%;
+    z-index: 0;
+    width: 76%;
+  }
+
+  .portrait {
+    position: absolute;
+    z-index: 1;
+    left: 2.1rem;
+    max-width: 84.9%;
+    top: -2.2rem;
+  }
+}
+
+
+.decorFront {
+  position: absolute;
+  top: unquote('min(24.6vw, 47.5%)');
+  right: unquote('min(0.8vw, 2.2%)');
+  width: 20%;
+  z-index: 3;
+
+  span {
+    font-family: $font-thin;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: unquote('min(1.36vw, 1.5rem)');
+    font-size: unquote('min(0.6vw, 0.75rem)');
+
+    &:nth-child(2) {
+      margin: unquote('min(1.2vw, 1.56rem)') 0;
+    }
+  }
+}
+
+.decorEnd {
+  position: absolute;
+  bottom: unquote('min(5vw, 10.4%)');
+  left: unquote('min(15.1vw, 37%)');
+  z-index: 3;
+
+  span {
+    font-family: $font-bold;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: unquote('min(1.36vw, 1.5rem)');
+    font-size: unquote('min(0.6vw, 0.75rem)');
+    color: #000;
+
+    &:nth-child(2) {
+      margin: unquote('min(1.2vw, 1.56rem)') 0;
+    }
+  }
+}
+
+.decorationContainer {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: unquote('min(46vw, 100%)');
+  max-height: 1080px;
+}
+
+.decoration {
+  position: absolute;
+  z-index: 4;
+  font-size: unquote('min(0.9rem, 0.8vw)');
+  line-height: 1;
+  transform: rotate(-90deg);
+  letter-spacing: 0.05rem;
+
+  &.positionHtml {
+    top: unquote('min(6vw, 13%)');
+    left: unquote('min(-2.2vw, -5.9%)');
+  }
+
+  &.positionReact {
+    top: unquote('min(1.7vw, 4%)');
+    left: unquote('min(5.4vw, 13%)');
+  }
+
+  &.positionScript {
+    top: unquote('min(1.7vw, 4%)');
+    left: unquote('min(25.1vw, 63%)');
+    z-index: 1;
+  }
+
+  &.positionWebpack {
+    top: unquote('min(7vw, 15%)');
+    left: unquote('min(30.7vw, 76.5%)');
+  }
+}
+
+
