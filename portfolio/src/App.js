@@ -10,12 +10,12 @@ import Carousel from "./components/Carousel";
 function App() {
     return (
         <div className="App">
-            {/*<Test/>*/}
+            <Test/>
 
-            <Home/>
-            <About/>
-            <Portfolio/>
-            <Contact/>
+            {/*<Home/>*/}
+            {/*<About/>*/}
+            {/*<Portfolio/>*/}
+            {/*<Contact/>*/}
         </div>
     );
 }
