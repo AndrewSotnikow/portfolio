@@ -6,7 +6,6 @@ import portrait from "../img/portrait.png"
 
 
 class Home extends Component {
-    x = "../img/portrait.jpg";
     render() {
         return (
             <section className={styles.section}>

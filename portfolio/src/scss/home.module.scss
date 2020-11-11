@@ -62,14 +62,13 @@
 }
 
 
-
 .textContainerContent {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  padding-left: 12.3%;
-  padding-bottom: 9.4%;
+  padding-left: unquote('min(7.5vw, 12.3%)');
+  padding-bottom: unquote('min(6vw, 10%)');
 
   div > span {
     display: inline-block;
@@ -122,7 +121,6 @@
 
   & > button {
     width: 39%;
-    //height: 200%;
     height: unquote('min(215%, 3.8rem)');
     border-radius: 1.9rem;
     border: 2px solid $primary-color;
@@ -158,9 +156,10 @@
   .portrait {
     position: absolute;
     z-index: 1;
-    left: 2.1rem;
+    left: unquote('max(2vw, 5%)');
+    width: unquote('max(26vw, 84.9%)');
     max-width: 84.9%;
-    top: -2.2rem;
+    top: unquote('min(-0.8vw, -4%)');
   }
 }
 
@@ -189,7 +188,7 @@
 .decorEnd {
   position: absolute;
   bottom: unquote('min(5vw, 10.4%)');
-  left: unquote('min(15.1vw, 37%)');
+  left: unquote('min(13.1vw, 33%)');
   z-index: 3;
 
   span {
