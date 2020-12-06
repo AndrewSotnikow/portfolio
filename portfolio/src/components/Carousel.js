@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import one from "../img/1.png";
-import two from "../img/2.png";
+import one from "../img/project1.jpg";
+import two from "../img/project2.jpg";
 import three from "../img/3.png";
 import styles from "../scss/portfolio.module.scss";
 
@@ -47,7 +47,7 @@ class Carousel extends Component {
         let images = this.state.images;
         let index = this.state.currentImageIndex;
         return (
-            <div className={styles.carouselContainer2}>
+            <div className={styles.carouselContainer}>
 <div className={styles.arrowContainer}>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="7" stroke="#ffcc00" fill="none" onClick={this.prevSlide} className={styles.arrowPrev}><polyline points="45.15 57.47 19.88 30.84 45.15 6.58"/></svg>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="7" stroke="#ffcc00" fill="none" onClick={this.nextSlide} className={styles.arrowNext}><polyline points="18.86 57.47 44.12 30.84 18.86 6.58"/></svg>
@@ -55,7 +55,7 @@ class Carousel extends Component {
 
 
 
-                <div className={styles.container}>
+                <div className={styles.imgContainer}>
                     <div className={styles.wrapper}
                          style={{"transform": `translateX(-${index * (100 / images.length)}%)`}}>
                         {images.map((image, index) =>

@@ -1,0 +1,124 @@
+@import "fonts";
+@import "colors";
+
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 812px) {
+
+  form {
+    display: table;
+    margin-top: 5vh;
+    width: 100%;
+    input,
+    textarea {
+      font: 1rem $font-regular;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid #000;
+      display: block;
+      padding: 6%;
+      width: 100%;
+      margin-bottom: 6%;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+
+      &::placeholder {
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        color: #999;
+        font: 1rem Helvetica, Arial, sans-serif;
+      }
+
+      &:focus,
+      &.populated {
+        padding-top: 28px;
+        padding-bottom: 12px;
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+
+    textarea {
+      height: 60%;
+    }
+
+    button {
+      width: 100%;
+      height: unquote('min(11vw, 6vh)');
+      border-radius: 1.9rem;
+      border: 2px solid $primary-color;
+      background-color: transparent;
+      font-family: $font-bold;
+      color: $primary-color;
+      font-size: unquote('min(1.8vh, 3.2vw)');
+      text-transform: uppercase;
+      &:hover {
+        background: #000;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+
+}
+
+@media only screen and (min-device-width: 813px) {
+  form {
+    display: table;
+    margin-top: 5vh;
+    width: 100%;
+
+    input, textarea {
+      font: 1vh $font-regular;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid #000;
+      display: block;
+      padding: 6%;
+      width: 100%;
+      margin-bottom: 6%;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+
+      &::placeholder {
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        color: #999;
+        font: 1vh $font-regular;
+      }
+
+      &:focus,
+      &.populated {
+        padding-top: 28px;
+        padding-bottom: 12px;
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+
+    textarea {
+      height: 60%;
+    }
+
+    button {
+      width: 100%;
+      height: unquote('min(6vh, 3vw)');
+      border-radius: 1.9rem;
+      border: 2px solid $primary-color;
+      background-color: transparent;
+      font-family: $font-bold;
+      color: $primary-color;
+      font-size: unquote('min(1vw, 1.15rem)');
+      text-transform: uppercase;
+
+      &:hover {
+        background: #000;
+        cursor: pointer;
+      }
+    }
+  }
+}

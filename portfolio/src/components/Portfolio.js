@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 import styles from "../scss/portfolio.module.scss";
 import GitLogo from "../components/gitLogo"
 import Carousel from "./Carousel";
+
 class Portfolio extends Component {
     render() {
+        const git = "https://github.com/AndrewSotnikow?tab=repositories";
         return (
-            <section className={styles.section}>
+            <section className={styles.section} id="portfolio">
                 <div className={styles.contentContainer}>
                     <div className={styles.textContainer}>
                         <div className={styles.textContainerContent}>
@@ -17,11 +19,11 @@ class Portfolio extends Component {
                             </div>
 
                             <div className={styles.gitLink}>
-                                <div><GitLogo /></div> <span>Link linl link</span>
+                                <div><GitLogo /></div> <span><a href={git} target="_blank" rel="noopener noreferrer">My GitHub</a></span>
                             </div>
                         </div>
                     </div>
-                    <div className={styles.carouselContainer}>
+                    <div className={styles.carousel}>
                         <Carousel/>
                     </div>
                 </div>
