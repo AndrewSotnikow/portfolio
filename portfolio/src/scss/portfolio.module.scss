@@ -129,18 +129,6 @@
     width: 100%;
     height: 76%;
   }
-  .carouselContainer::after {
-    position: absolute;
-    top: 0;
-    left: unquote('min(83vw, 40vh)');;
-    display: flex;
-    justify-content: end;
-    //width: 18vw;
-    width: unquote('max(25vw, 47vw)');
-    height: 80%;
-    background-color: rgba(0, 0, 0, 0.5);
-    content: "";
-  }
 
   .arrowContainer {
     position: absolute;
@@ -170,6 +158,19 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
+    &::after {
+      position: absolute;
+      top: 0;
+      //left: 73vw;
+      left: unquote('min(78vw, 40vh)');
+      display: flex;
+      justify-content: end;
+      width: 30%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      content: "";
+      overflow: hidden;
+    }
   }
 
   .wrapper {
@@ -181,6 +182,7 @@
 
     img {
       flex: 1;
+      overflow: hidden;
       width: 31vh;
       height: 31vh;
       margin-right: 10vw;
