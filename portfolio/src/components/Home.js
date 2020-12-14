@@ -5,10 +5,7 @@ import portrait from "../img/portrait.png"
 import Particles from "react-tsparticles";
 import particlesParam from "./animation/particles.json";
 import {HashLink} from "react-router-hash-link";
-import portrait360 from "../img/portrait360.png";
-import portrait475 from "../img/portrait475.png";
-import portrait573 from "../img/portrait573.png";
-import portrait652 from "../img/portrait652.png";
+
 
 class Home extends Component {
     render() {
