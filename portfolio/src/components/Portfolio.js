@@ -19,7 +19,8 @@ class Portfolio extends Component {
                             </div>
 
                             <div className={styles.gitLink}>
-                                <div><GitLogo /></div> <span><a href={git} target="_blank" rel="noopener noreferrer">My GitHub</a></span>
+                                <div><GitLogo/></div>
+                                <span><a href={git} target="_blank" rel="noopener noreferrer">My GitHub</a></span>
                             </div>
                         </div>
                     </div>

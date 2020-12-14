@@ -19,31 +19,31 @@
   font-style: normal;
   font-display: swap;
 }
-@media only screen and (min-device-width: 414px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px) {
   form {
     display: table;
-    margin-top: 5vh;
     width: 100%;
+    margin-top: 1vh;
   }
   form input,
 form textarea {
-    font: 1rem HelveticaNeueLTRoman, sans-serif;
+    display: block;
     box-sizing: border-box;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #000;
-    display: block;
-    padding: 6%;
-    width: 100%;
     margin-bottom: 6%;
-    outline: none;
+    padding: 6%;
+    font: 1rem HelveticaNeueLTRoman, sans-serif;
     transition: all 0.2s ease-in-out;
+    outline: none;
   }
   form input::placeholder,
 form textarea::placeholder {
+    color: #999;
+    font: 0.8rem Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-    color: #999;
-    font: 1rem Helvetica, Arial, sans-serif;
   }
   form input:focus, form input.populated,
 form textarea:focus,
@@ -57,17 +57,18 @@ form textarea.populated::placeholder {
     color: transparent;
   }
   form textarea {
-    height: 60%;
+    height: 40%;
   }
   form button {
-    width: 100%;
+    width: 73%;
     height: min(11vw, 6vh);
-    border-radius: 1.9rem;
     border: 2px solid #ffcc00;
+    border-radius: 1.9rem;
+    margin-top: 2vh;
     background-color: transparent;
-    font-family: HelveticaNeueLTBold, sans-serif;
     color: #ffcc00;
-    font-size: min(1.8vh, 3.2vw);
+    font-family: HelveticaNeueLTBold, sans-serif;
+    font-size: min(3.2vw, 1.8vh);
     text-transform: uppercase;
   }
   form button:hover {
@@ -75,29 +76,29 @@ form textarea.populated::placeholder {
     cursor: pointer;
   }
 }
-@media only screen and (min-device-width: 813px) {
+@media only screen and (min-device-width: 768px) and (max-device-height: 1366px) {
   form {
     display: table;
-    margin-top: 5vh;
     width: 100%;
+    margin-top: 1vh;
   }
   form input, form textarea {
-    font: 1vh HelveticaNeueLTRoman, sans-serif;
+    display: block;
     box-sizing: border-box;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #000;
-    display: block;
-    padding: 6%;
-    width: 100%;
     margin-bottom: 6%;
-    outline: none;
+    padding: 6%;
+    font: 1rem HelveticaNeueLTRoman, sans-serif;
     transition: all 0.2s ease-in-out;
+    outline: none;
   }
   form input::placeholder, form textarea::placeholder {
+    color: #999;
+    font: 1.5vh HelveticaNeueLTRoman, sans-serif;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-    color: #999;
-    font: 1vh HelveticaNeueLTRoman, sans-serif;
   }
   form input:focus, form input.populated, form textarea:focus, form textarea.populated {
     padding-top: 28px;
@@ -110,13 +111,65 @@ form textarea.populated::placeholder {
     height: 60%;
   }
   form button {
-    width: 100%;
-    height: min(6vh, 3vw);
-    border-radius: 1.9rem;
+    width: min( 14vw, 69%);
+    height: min(4.1vw, 5.3vh);
     border: 2px solid #ffcc00;
+    border-radius: 1.9rem;
+    margin-top: 3vh;
     background-color: transparent;
-    font-family: HelveticaNeueLTBold, sans-serif;
     color: #ffcc00;
+    font-family: HelveticaNeueLTBold, sans-serif;
+    font-size: min(2vh, 1.3vw);
+    text-transform: uppercase;
+  }
+  form button:hover {
+    background: #000;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-device-width: 1025px) {
+  form {
+    display: table;
+    width: 100%;
+    margin-top: 1vh;
+  }
+  form input, form textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 6%;
+    padding: 6%;
+    font: 1rem HelveticaNeueLTRoman, sans-serif;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+  }
+  form input::placeholder, form textarea::placeholder {
+    color: #999;
+    font: 1.5vh HelveticaNeueLTRoman, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  form input:focus, form input.populated, form textarea:focus, form textarea.populated {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+  form input:focus::placeholder, form input.populated::placeholder, form textarea:focus::placeholder, form textarea.populated::placeholder {
+    color: transparent;
+  }
+  form textarea {
+    height: 60%;
+  }
+  form button {
+    width: 51%;
+    height: 18%;
+    border: 2px solid #ffcc00;
+    border-radius: 1.9rem;
+    margin-top: 3vh;
+    background-color: transparent;
+    color: #ffcc00;
+    font-family: HelveticaNeueLTBold, sans-serif;
     font-size: min(1vw, 1.15rem);
     text-transform: uppercase;
   }

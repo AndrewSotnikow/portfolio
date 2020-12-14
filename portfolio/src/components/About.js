@@ -1,35 +1,37 @@
 import React, {Component} from 'react';
 import styles from "../scss/about.module.scss";
-import web from "../img/web.png";
-import webNormal from "../img/web.png";
-import webSmall from "../img/web_small.png";
-import photoNormal from "../img/photo.png";
-import photoSmall from "../img/photo_small.png";
-import cyclingNormal from "../img/cycling.png";
-import cyclingSmall from "../img/cycling_small.png";
-import stockNormal from "../img/stock.png";
-import stockSmall from "../img/stock_small.png";
+import webNormal from "../img/web.jpg";
+import webSmall from "../img/web_small.jpg";
+import photoNormal from "../img/photo.jpg";
+import photoSmall from "../img/photo_small.jpg";
+import cyclingNormal from "../img/cycling.jpg";
+import cyclingSmall from "../img/cycling_small.jpg";
+import stockNormal from "../img/stock.jpg";
+import stockSmall from "../img/stock_small.jpg";
+
 class About extends Component {
 
     render() {
-        // const webNormal = "../img/web.png";
-        // const webSmall = "../img/web_small.png";
         const linkedin = "https://www.linkedin.com/in/andrzej-sotnikow/";
         return (
             <section className={styles.section} id="about">
                 <div className={styles.contentContainer}>
-                  <div className={styles.textContainer}>
-                      <div className={styles.textContent}>
-                          <span>&#60;about&#62;</span>
-                          <span>Skills,</span>
-                          <span>education</span>
-                          <p>kurs w coders lab podczas którego poznałem następujące technologie: HTML, CSS, Javascript,
-                              React JS, sass, Webpack, RWD. skończyłem KURS UX w Szkołe Igora Dżazowa. Z łatwością pracuję
-                              w edytorach graficznych i znam podstawy projektowania i kompozycji. Za plecami mam wyższe
-                              wykształcenie z marketingu w Wyższej Szkołe Finansów i Zarządzania w Warszawie. Więcej na <a
-                                  href={linkedin} target="_blank" rel="noopener noreferrer">LINKEDIN</a></p>
-                      </div>
-                  </div>
+                    <div className={styles.textContainer}>
+                        <div className={styles.textContent}>
+                            <span>&#60;about&#62;</span>
+                            <span>Skills,</span>
+                            <span>education</span>
+                            <p>kurs w coders lab podczas którego poznałem następujące technologie: HTML, CSS,
+                                Javascript,
+                                React JS, sass, Webpack, RWD. skończyłem KURS UX w Szkołe Igora Dżazowa. Z łatwością
+                                pracuję
+                                w edytorach graficznych i znam podstawy projektowania i kompozycji. Za plecami mam
+                                wyższe
+                                wykształcenie z marketingu w Wyższej Szkołe Finansów i Zarządzania w Warszawie. Więcej
+                                na <a
+                                    href={linkedin} target="_blank" rel="noopener noreferrer">LINKEDIN</a></p>
+                        </div>
+                    </div>
                     <div className={styles.decorationContainer}>
                         <span className={`${styles.decoration} ${styles.positionHtml}`}>&#60;html&#62;</span>
                         <span className={`${styles.decoration} ${styles.positionReact}`}>&#60;react&#62;</span>
@@ -53,7 +55,7 @@ class About extends Component {
                                 <img
                                     sizes="(max-width: 120px) 40vw, 38px"
                                     srcSet={`${webSmall} 38w`}
-                                    alt=""/>
+                                    alt="icon"/>
                             </picture>
                             <span>web</span>
                             <span>development</span>
@@ -71,7 +73,7 @@ class About extends Component {
                                 <img
                                     sizes="(max-width: 120px) 40vw, 38px"
                                     srcSet={`${photoSmall} 38w`}
-                                    alt=""/>
+                                    alt="icon"/>
                             </picture>
                             <span>photo</span>
                             <span>editing</span>
@@ -89,7 +91,7 @@ class About extends Component {
                                 <img
                                     sizes="(max-width: 120px) 40vw, 38px"
                                     srcSet={`${cyclingSmall} 38w`}
-                                    alt=""/>
+                                    alt="icon"/>
                             </picture>
                             <span>xc</span>
                             <span>cycling</span>
@@ -107,7 +109,7 @@ class About extends Component {
                                 <img
                                     sizes="(max-width: 120px) 40vw, 38px"
                                     srcSet={`${stockSmall} 38w`}
-                                    alt=""/>
+                                    alt="icon"/>
                             </picture>
                             <span>stock</span>
                             <span>photography</span>

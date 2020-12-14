@@ -2,26 +2,21 @@ import React, {Component} from 'react';
 import styles from "../scss/contact.module.scss";
 import Lines from "../components/lines";
 import linkedIn from "../img/linkedIn.png";
-import mail from "../img/mail.png";
-import {HashLink} from 'react-router-hash-link';
 import linkedInSmall from "../img/linkedIn_small.png";
-import mailSmall from "../img/mail_small.png";
+import {HashLink} from 'react-router-hash-link';
 import MyForm from "../components/Contact form"
-
-
 
 
 class Contact extends Component {
 
     render() {
         const linkedin = "https://www.linkedin.com/in/andrzej-sotnikow/";
-        const gmail = "mailto:sot-dev@gmail.com";
         return (
             <section className={styles.section} id="contact">
                 <div className={styles.abstract}>
-                  <div className={styles.abstractContainer}>
-                      <Lines/>
-                  </div>
+                    <div className={styles.abstractContainer}>
+                        <Lines/>
+                    </div>
                 </div>
                 <div className={styles.contentContainer}>
 
@@ -31,7 +26,7 @@ class Contact extends Component {
                                 <span>&#60;Contact&#62;</span>
                                 <span>Contact</span>
                             </div>
-                            <MyForm />
+                            <MyForm/>
                         </div>
                     </div>
                 </div>
@@ -51,8 +46,8 @@ class Contact extends Component {
                                 sizes="(max-width: 120px) 40vw, 38px"
                                 srcSet={`${linkedInSmall} 38w`}
                                 alt="LinkedIn Icon"/>
-                        </picture>
 
+                        </picture>
                     </a>
                     <ul>
                         <li><HashLink smooth className={styles.navLink} to="#home">Home</HashLink></li>

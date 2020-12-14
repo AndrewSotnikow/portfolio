@@ -5,7 +5,10 @@ import portrait from "../img/portrait.png"
 import Particles from "react-tsparticles";
 import particlesParam from "./animation/particles.json";
 import {HashLink} from "react-router-hash-link";
-
+import portrait360 from "../img/portrait360.png";
+import portrait475 from "../img/portrait475.png";
+import portrait573 from "../img/portrait573.png";
+import portrait652 from "../img/portrait652.png";
 
 class Home extends Component {
     render() {
@@ -13,7 +16,7 @@ class Home extends Component {
             <section className={styles.section} id="home">
                 <nav className={styles.nav}>
                     <div className="menuToggle">
-                        <input type="checkbox" />
+                        <input type="checkbox"/>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -41,10 +44,10 @@ class Home extends Component {
                                     realizacji
                                     projektów.</p>
                             </div>
-
                             <div className={styles.buttons}>
-                                <button className={styles.getCv}><a download href="../img/3.png">pobierz cv</a> </button>
-                                <button className={styles.github}><a download href="../img/3.png">moje prace</a></button>
+                                <button className={styles.getCv}><a download href="../img/3.png">pobierz cv</a></button>
+                                <button className={styles.github}><a download href="../img/3.png">moje prace</a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -72,9 +75,7 @@ class Home extends Component {
                             <div className={styles.abstract}>
                                 <Particles params={particlesParam}/>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </section>

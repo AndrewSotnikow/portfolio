@@ -2,30 +2,31 @@
 @import "colors";
 
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px) {
 
   form {
     display: table;
-    margin-top: 5vh;
     width: 100%;
+    margin-top: 1vh;
+
     input,
     textarea {
-      font: 1rem $font-regular;
+      display: block;
       box-sizing: border-box;
+      width: 100%;
       border: none;
       border-bottom: 1px solid #000;
-      display: block;
-      padding: 6%;
-      width: 100%;
       margin-bottom: 6%;
-      outline: none;
+      padding: 6%;
+      font: 1rem $font-regular;
       transition: all 0.2s ease-in-out;
+      outline: none;
 
       &::placeholder {
+        color: #999;
+        font: 0.8rem Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
-        color: #999;
-        font: 1rem Helvetica, Arial, sans-serif;
       }
 
       &:focus,
@@ -40,19 +41,23 @@
     }
 
     textarea {
-      height: 60%;
+      height: 40%;
     }
 
     button {
-      width: 100%;
+      width: 73%;
       height: unquote('min(11vw, 6vh)');
-      border-radius: 1.9rem;
+
+      //height: 3.9vh;
       border: 2px solid $primary-color;
+      border-radius: 1.9rem;
+      margin-top: 2vh;
       background-color: transparent;
-      font-family: $font-bold;
       color: $primary-color;
-      font-size: unquote('min(1.8vh, 3.2vw)');
+      font-family: $font-bold;
+      font-size: unquote('min(3.2vw, 1.8vh)');
       text-transform: uppercase;
+
       &:hover {
         background: #000;
         cursor: pointer;
@@ -60,33 +65,31 @@
     }
   }
 
-
-
 }
 
-@media only screen and (min-device-width: 813px) {
+@media only screen and (min-device-width: 768px) and (max-device-height: 1366px) {
   form {
     display: table;
-    margin-top: 5vh;
     width: 100%;
+    margin-top: 1vh;
 
     input, textarea {
-      font: 1vh $font-regular;
+      display: block;
       box-sizing: border-box;
+      width: 100%;
       border: none;
       border-bottom: 1px solid #000;
-      display: block;
-      padding: 6%;
-      width: 100%;
       margin-bottom: 6%;
-      outline: none;
+      padding: 6%;
+      font: 1rem $font-regular;
       transition: all 0.2s ease-in-out;
+      outline: none;
 
       &::placeholder {
+        color: #999;
+        font: 1.5vh $font-regular;
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
-        color: #999;
-        font: 1vh $font-regular;
       }
 
       &:focus,
@@ -105,13 +108,76 @@
     }
 
     button {
-      width: 100%;
-      height: unquote('min(6vh, 3vw)');
-      border-radius: 1.9rem;
+      //width: 10vw;
+      width: unquote('min( 14vw, 69%)');
+      height: unquote('min(4.1vw, 5.3vh)');
       border: 2px solid $primary-color;
+      border-radius: 1.9rem;
+      margin-top: 3vh;
       background-color: transparent;
-      font-family: $font-bold;
       color: $primary-color;
+      font-family: $font-bold;
+      font-size: unquote('min(2vh, 1.3vw)');
+      text-transform: uppercase;
+
+      &:hover {
+        background: #000;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1025px) {
+  form {
+    display: table;
+    width: 100%;
+    margin-top: 1vh;
+
+    input, textarea {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #000;
+      margin-bottom: 6%;
+      padding: 6%;
+      font: 1rem $font-regular;
+      transition: all 0.2s ease-in-out;
+      outline: none;
+
+      &::placeholder {
+        color: #999;
+        font: 1.5vh $font-regular;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:focus,
+      &.populated {
+        padding-top: 28px;
+        padding-bottom: 12px;
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+
+    textarea {
+      height: 60%;
+    }
+
+    button {
+      width: 51%;
+      height: 18%;;
+      //height: unquote('min(4.1vw, 5.3vh)');
+      border: 2px solid $primary-color;
+      border-radius: 1.9rem;
+      margin-top: 3vh;
+      background-color: transparent;
+      color: $primary-color;
+      font-family: $font-bold;
       font-size: unquote('min(1vw, 1.15rem)');
       text-transform: uppercase;
 

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../scss/form.module.scss"
+
 export default class MyForm extends React.Component {
     constructor(props) {
         super(props);
@@ -10,16 +11,15 @@ export default class MyForm extends React.Component {
     }
 
     render() {
-        const { status } = this.state;
+        const {status} = this.state;
         return (
             <form className={styles.form}
-                onSubmit={this.submitForm}
-                action="https://formspree.io/f/mleowvlv"
-                method="POST"
+                  onSubmit={this.submitForm}
+                  action="https://formspree.io/f/mleowvlv"
+                  method="POST"
             >
-                <input type="text" name="name" placeholder="name"/>
-                <input type="email" name="email" placeholder="email" />
-                <textarea  name="message" placeholder="message"/>
+                <input type="email" name="email" placeholder="email"/>
+                <textarea name="message" placeholder="message"/>
                 {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
                 {status === "ERROR" && <p>Ooops! There was an error.</p>}
             </form>
@@ -37,9 +37,9 @@ export default class MyForm extends React.Component {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 200) {
                 form.reset();
-                this.setState({ status: "SUCCESS" });
+                this.setState({status: "SUCCESS"});
             } else {
-                this.setState({ status: "ERROR" });
+                this.setState({status: "ERROR"});
             }
         };
         xhr.send(data);

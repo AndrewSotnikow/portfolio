@@ -2,393 +2,12 @@
 @import "colors";
 
 
-
-@media only screen and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-width: 360px) and (max-width: 767px) {
   .section {
-    margin: 0 auto;
-    max-width: 1920px;
-    max-height: 1080px;
     width: 100%;
-    height: unquote('min(100vh, 1080px)');
-    background-color: $background-white;
-    color: #000;
-    font-family: $font-regular;
-  }
-
-  .nav {
-    width: 21.5rem;
-    margin: 0 auto;
-    padding-top: 3.5rem;
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: row;
-    }
-  }
-
-  .link {
-    font-size: 1rem;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  .logo {
-    margin-top: -0.8125rem;
-    margin-left: 4.4rem;
-
-  }
-  //left container with text and LinkedIn link
-  .contentContainer {
-    width: 100%;
-    height: unquote('min(82vw, 82%)');
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .textContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-  }
-
-  .textContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-left: 15.3%;
-    height: 64%;
-
-    span {
-      display: inline-block;
-      font-family: $font-bold;
-      font-size: unquote('min(5.07rem, 4.23vw)');
-      line-height: unquote('min(6rem, 5vw)');
-      letter-spacing: 0.1rem;
-
-      &:first-child {
-        position: relative;
-        font-size: unquote('min(0.9rem, 0.8vw)');
-        line-height: 1;
-        padding-bottom: 0.7%;
-        letter-spacing: 0.05rem;
-      }
-
-      &:nth-child(2) {
-        color: $primary-color;
-      }
-    }
-
-
-    p {
-      text-align: justify;
-      text-transform: uppercase;
-      width: 78%;
-      line-height: unquote('min(1.9rem, 1.55vw)');
-      font-size: unquote('min(0.76rem, 0.65vw)');
-      color: #000;
-      letter-spacing: 0.15rem;
-      a {
-        color: $primary-color;
-        font-family: $font-bold;
-        text-decoration: none;
-        padding-bottom: 3px;
-        border-bottom: 1px solid $primary-color;
-      }
-    }
-  }
-  //Right container with images and animation
-  .decorationContainer {
-    position: relative;
-    width: 50%;
-    height: unquote('min(46vw, 100%)');
-    max-height: 1080px;
-  }
-
-  .decoration {
-    position: absolute;
-    z-index: 4;
-    font-size: unquote('min(0.9rem, 0.8vw)');
-    line-height: 1;
-    transform: rotate(-90deg);
-    letter-spacing: 0.05rem;
-
-    &.positionHtml {
-      animation: slidein 5s linear 0.7s infinite alternate ;
-      top: unquote('min(9vw, 19%)');
-      left: unquote('min(4.3vw, 8.5%)');
-    }
-
-    &.positionReact {
-      animation: slidein 5s linear 1s infinite alternate ;
-      bottom: unquote('min(5.6vw, 12.2%)');
-      left:  unquote('min(11.3vw, 22.8%)');
-    }
-
-    &.positionScript {
-      animation: slidein 5s linear 2.3s infinite alternate ;
-      bottom: unquote('min(5.6vw, 12.2%)');
-      right:  unquote('min(15.8vw, 31.5%)');
-    }
-
-    &.positionWebpack {
-      animation: slidein 5s linear 0.3s infinite alternate ;
-      top: unquote('min(10vw, 21.5%)');
-      right:  unquote('min(9vw, 18%)');
-    }
-  }
-  @keyframes slidein {
-    0% { transform: rotate(-90deg) translateX(0px); }
-    50% { transform: rotate(-90deg) translateX(-25px); }
-    100% { transform: rotate(-90deg) translateX(25px); }
-  }
-  .hobbies {
-    margin: 0 auto;
-    display: flex;
-    width: unquote('min(36vw, 36%)');
-    height: unquote('min(7.2vw, 12.5%)');
-    flex-direction: column;
-    justify-content: space-between;
-    span:first-child {
-      font-family: $font-bold;
-      position: relative;
-      font-size: unquote('min(0.9rem, 0.8vw)');
-      line-height: 1;
-      bottom: 8%;
-      letter-spacing: 0.05rem;
-    }
-  }
-  .hobbiesContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    div{
-      width:unquote('min(25%, 9vw)');
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      img{
-        padding-bottom: unquote('min(11%, 0.9vw)');
-      }
-    }
-    span{
-      font-family: $font-bold;
-      font-size: unquote('min(0.68vw, 0.8rem)');
-      text-transform: uppercase;
-      letter-spacing: 0.07rem;
-      &:nth-child(3){
-        padding-top: unquote('min(11%, 0.9vw)');
-        padding-bottom: unquote('min(3%, 0.2vw)');
-      }
-
-    }
-  }
-
-
-}
-@media only screen and (min-device-width:768px) and (max-device-height:  1366px){
-  .section {
-    margin: 0 auto;
-    width: 100%;
-    height: 50vh;
     max-width: 1366px;
-    background-color: $background-white;
-    color: #000;
-    font-family: $font-regular;
-  }
-
-  .nav {
-    width: 21.5rem;
-    margin: 0 auto;
-    padding-top: 3.5rem;
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: row;
-    }
-  }
-
-  .link {
-    font-size: 1rem;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  .logo {
-    margin-top: -0.8125rem;
-    margin-left: 4.4rem;
-
-  }
-  //left container with text and LinkedIn link
-  .contentContainer {
-    width: 100%;
-    height: unquote('min(67vw, 76%)');
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .textContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-  }
-
-  .textContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-left: 15.3%;
-    height: 64%;
-
-    span {
-      display: inline-block;
-      font-family: $font-bold;
-      font-size: unquote('min(5.07rem, 4.23vw)');
-      line-height: unquote('min(6rem, 5vw)');
-      letter-spacing: 0.1rem;
-
-      &:first-child {
-        position: relative;
-        font-size: unquote('min(0.9rem, 0.8vw)');
-        line-height: 1;
-        padding-bottom: 0.7%;
-        letter-spacing: 0.05rem;
-      }
-
-      &:nth-child(2) {
-        color: $primary-color;
-      }
-    }
-
-
-    p {
-      text-align: justify;
-      text-transform: uppercase;
-      width: 78%;
-      line-height: unquote('min(1.9rem, 1.55vw)');
-      font-size: unquote('min(0.76rem, 0.65vw)');
-      color: #000;
-      letter-spacing: 0.15rem;
-      a {
-        color: $primary-color;
-        font-family: $font-bold;
-        text-decoration: none;
-        padding-bottom: 3px;
-        border-bottom: 1px solid $primary-color;
-      }
-    }
-  }
-  //Right container with images and animation
-  .decorationContainer {
-    position: relative;
-    width: 50%;
-    height: unquote('min(46vw, 100%)');
-    max-height: 1080px;
-  }
-
-  .decoration {
-    position: absolute;
-    z-index: 4;
-    font-size: unquote('min(0.9rem, 0.8vw)');
-    line-height: 1;
-    transform: rotate(-90deg);
-    letter-spacing: 0.05rem;
-
-    &.positionHtml {
-      animation: slidein 5s linear 0.7s infinite alternate ;
-      top: unquote('min(9vw, 19%)');
-      left: unquote('min(4.3vw, 8.5%)');
-    }
-
-    &.positionReact {
-      animation: slidein 5s linear 1s infinite alternate ;
-      bottom: unquote('min(5.6vw, 12.2%)');
-      left:  unquote('min(11.3vw, 22.8%)');
-    }
-
-    &.positionScript {
-      animation: slidein 5s linear 2.3s infinite alternate ;
-      bottom: unquote('min(5.6vw, 12.2%)');
-      right:  unquote('min(15.8vw, 31.5%)');
-    }
-
-    &.positionWebpack {
-      animation: slidein 5s linear 0.3s infinite alternate ;
-      top: unquote('min(10vw, 21.5%)');
-      right:  unquote('min(9vw, 18%)');
-    }
-  }
-  @keyframes slidein {
-    0% { transform: rotate(-90deg) translateX(0px); }
-    50% { transform: rotate(-90deg) translateX(-25px); }
-    100% { transform: rotate(-90deg) translateX(25px); }
-  }
-  .hobbies {
-    margin: 0 auto;
-    display: flex;
-    width: unquote('min(36vw, 36%)');
-    height: unquote('min(7.2vw, 12.5%)');
-    flex-direction: column;
-    justify-content: space-between;
-    span:first-child {
-      font-family: $font-bold;
-      position: relative;
-      font-size: unquote('min(0.9rem, 0.8vw)');
-      line-height: 1;
-      bottom: 8%;
-      letter-spacing: 0.05rem;
-    }
-  }
-  .hobbiesContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    div{
-      width:unquote('min(25%, 9vw)');
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      img{
-        padding-bottom: unquote('min(11%, 0.9vw)');
-      }
-    }
-    span{
-      font-family: $font-bold;
-      font-size: unquote('min(0.68vw, 0.8rem)');
-      text-transform: uppercase;
-      letter-spacing: 0.07rem;
-      &:nth-child(3){
-        padding-top: unquote('min(11%, 0.9vw)');
-        padding-bottom: unquote('min(3%, 0.2vw)');
-      }
-
-    }
-  }
-
-}
-@media only screen and (min-device-width: 414px) and (max-device-width: 812px){
-  .section {
-    margin: 0 auto;
-    width: 100%;
     height: 100vh;
-    max-width: 1366px;
+    margin: 0 auto;
     background-color: $background-white;
     color: #000;
     font-family: $font-regular;
@@ -397,19 +16,20 @@
     width: 21.5rem;
     margin: 0 auto;
     padding-top: 3.5rem;
+
     ul {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
       flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
   .link {
-    font-size: 1rem;
     color: #fff;
-    text-transform: uppercase;
+    font-size: 1rem;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   .logo {
@@ -419,30 +39,30 @@
   }
   //left container with text and LinkedIn link
   .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 83%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
 
   }
 
   .textContainer {
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: center;
+    align-items: start;
     width: 100%;
     height: 100%;
   }
 
-  .textContent{
+  .textContent {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-left: 6%;
     height: 71%;
+    padding-left: 6%;
 
     span {
       display: inline-block;
@@ -453,9 +73,9 @@
 
       &:first-child {
         position: relative;
-        font-size:1.1vh;
-        line-height: 1;
         padding-bottom: 3vh;
+        font-size: 1.1vh;
+        line-height: 1;
         letter-spacing: 0.05rem;
       }
 
@@ -466,29 +86,28 @@
 
 
     p {
-      text-align: justify;
-      white-space: pre-line;
-      text-transform: uppercase;
       width: 95%;
-      line-height: 2.5vh;
-      margin-top:3vh;
-      //line-height: unquote('min(1.9rem, 1.55vw)');
-      font-size: 1vh;
+      margin-top: 3vh;
       color: #000;
+      font-size: 1vh;
+      //line-height: unquote('min(1.9rem, 1.55vw)');
+      line-height: 2.5vh;
       letter-spacing: 0.15rem;
+      text-transform: uppercase;
+
       a {
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 3px;
         color: $primary-color;
         font-family: $font-bold;
         text-decoration: none;
-        padding-bottom: 3px;
-        border-bottom: 1px solid $primary-color;
       }
     }
   }
   //Right container with images and animation
   .decorationContainer {
-    display: none;
     position: relative;
+    display: none;
     width: 50%;
     height: unquote('min(46vw, 100%)');
     max-height: 1080px;
@@ -499,77 +118,88 @@
     z-index: 4;
     font-size: unquote('min(0.9rem, 0.8vw)');
     line-height: 1;
-    transform: rotate(-90deg);
     letter-spacing: 0.05rem;
+    transform: rotate(-90deg);
 
     &.positionHtml {
-      animation: slidein 5s linear 0.7s infinite alternate ;
       top: unquote('min(9vw, 19%)');
       left: unquote('min(4.3vw, 8.5%)');
+      animation: slidein 5s linear 0.7s infinite alternate;
     }
 
     &.positionReact {
-      animation: slidein 5s linear 1s infinite alternate ;
       bottom: unquote('min(5.6vw, 12.2%)');
-      left:  unquote('min(11.3vw, 22.8%)');
+      left: unquote('min(11.3vw, 22.8%)');
+      animation: slidein 5s linear 1s infinite alternate;
     }
 
     &.positionScript {
-      animation: slidein 5s linear 2.3s infinite alternate ;
+      right: unquote('min(15.8vw, 31.5%)');
       bottom: unquote('min(5.6vw, 12.2%)');
-      right:  unquote('min(15.8vw, 31.5%)');
+      animation: slidein 5s linear 2.3s infinite alternate;
     }
 
     &.positionWebpack {
-      animation: slidein 5s linear 0.3s infinite alternate ;
       top: unquote('min(10vw, 21.5%)');
-      right:  unquote('min(9vw, 18%)');
+      right: unquote('min(9vw, 18%)');
+      animation: slidein 5s linear 0.3s infinite alternate;
     }
   }
   @keyframes slidein {
-    0% { transform: rotate(-90deg) translateX(0px); }
-    50% { transform: rotate(-90deg) translateX(-25px); }
-    100% { transform: rotate(-90deg) translateX(25px); }
+    0% {
+      transform: rotate(-90deg) translateX(0px);
+    }
+    50% {
+      transform: rotate(-90deg) translateX(-25px);
+    }
+    100% {
+      transform: rotate(-90deg) translateX(25px);
+    }
   }
   .hobbies {
-    margin: 0 auto;
     display: flex;
-    width: 88%;
-    height: 10vw;
     flex-direction: column;
     justify-content: space-between;
+    width: 88%;
+    height: 10vw;
+    margin: 0 auto;
+
     span:first-child {
-      font-family: $font-bold;
       position: relative;
-      font-size:1.1vh;
-      line-height: 1;
-      padding-bottom: 3vh;
       bottom: 8%;
+      padding-bottom: 3vh;
+      font-family: $font-bold;
+      font-size: 1.1vh;
+      line-height: 1;
       letter-spacing: 0.05rem;
     }
   }
-  .hobbiesContainer{
+  .hobbiesContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     width: 80%;
-    div{
+    margin: 0 auto;
+
+    div {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      img{
+
+      img {
         padding-bottom: unquote('min(11%, 0.9vw)');
       }
     }
-    span{
+
+    span {
       font-family: $font-bold;
       font-size: 1.5vw;
-      text-transform: uppercase;
       letter-spacing: 0.07rem;
-      &:nth-child(3){
+      text-transform: uppercase;
+
+      &:nth-child(3) {
         padding-top: unquote('min(11%, 0.9vw)');
         padding-bottom: unquote('min(3%, 0.2vw)');
       }
@@ -580,13 +210,12 @@
 
 }
 
-@media only screen and (min-device-width: 1025px){
+@media only screen and (min-width: 768px) and (max-height: 1366px) {
   .section {
-    margin: 0 auto;
-    max-width: 1920px;
-    max-height: 1080px;
     width: 100%;
-    height: unquote('min(100vh, 1080px)');
+    max-width: 1366px;
+    height: 50vh;
+    margin: 0 auto;
     background-color: $background-white;
     color: #000;
     font-family: $font-regular;
@@ -596,19 +225,20 @@
     width: 21.5rem;
     margin: 0 auto;
     padding-top: 3.5rem;
+
     ul {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
       flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
   .link {
-    font-size: 1rem;
     color: #fff;
-    text-transform: uppercase;
+    font-size: 1rem;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   .logo {
@@ -618,29 +248,29 @@
   }
   //left container with text and LinkedIn link
   .contentContainer {
-    width: 100%;
-    height: unquote('min(46.3vw, 82.5%)');
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: unquote('min(67vw, 76%)');
   }
 
   .textContainer {
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: center;
+    align-items: start;
     width: 50%;
     height: 100%;
   }
 
-  .textContent{
+  .textContent {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-left: 15.3%;
     height: 64%;
+    padding-left: 15.3%;
 
     span {
       display: inline-block;
@@ -651,9 +281,9 @@
 
       &:first-child {
         position: relative;
+        padding-bottom: 0.7%;
         font-size: unquote('min(0.9rem, 0.8vw)');
         line-height: 1;
-        padding-bottom: 0.7%;
         letter-spacing: 0.05rem;
       }
 
@@ -664,19 +294,20 @@
 
 
     p {
-      text-align: justify;
-      text-transform: uppercase;
       width: 78%;
-      line-height: unquote('min(1.9rem, 1.55vw)');
-      font-size: unquote('min(0.76rem, 0.65vw)');
       color: #000;
-      letter-spacing: 0.15rem;
+      font-size: unquote('min(1rem, 1vw)');
+      line-height: unquote('min(2.1rem, 1.75vw)');
+      text-align: justify;
+      letter-spacing: 0.11rem;
+      text-transform: uppercase;
+
       a {
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 3px;
         color: $primary-color;
         font-family: $font-bold;
         text-decoration: none;
-        padding-bottom: 3px;
-        border-bottom: 1px solid $primary-color;
       }
     }
   }
@@ -693,75 +324,494 @@
     z-index: 4;
     font-size: unquote('min(0.9rem, 0.8vw)');
     line-height: 1;
-    transform: rotate(-90deg);
     letter-spacing: 0.05rem;
+    transform: rotate(-90deg);
 
     &.positionHtml {
-      animation: slidein 5s linear 0.7s infinite alternate ;
       top: unquote('min(9vw, 19%)');
       left: unquote('min(4.3vw, 8.5%)');
+      animation: slidein 5s linear 0.7s infinite alternate;
     }
 
     &.positionReact {
-      animation: slidein 5s linear 1s infinite alternate ;
       bottom: unquote('min(5.6vw, 12.2%)');
-      left:  unquote('min(11.3vw, 22.8%)');
+      left: unquote('min(11.3vw, 22.8%)');
+      animation: slidein 5s linear 1s infinite alternate;
     }
 
     &.positionScript {
-      animation: slidein 5s linear 2.3s infinite alternate ;
+      right: unquote('min(15.8vw, 31.5%)');
       bottom: unquote('min(5.6vw, 12.2%)');
-      right:  unquote('min(15.8vw, 31.5%)');
+      animation: slidein 5s linear 2.3s infinite alternate;
     }
 
     &.positionWebpack {
-      animation: slidein 5s linear 0.3s infinite alternate ;
       top: unquote('min(10vw, 21.5%)');
-      right:  unquote('min(9vw, 18%)');
+      right: unquote('min(9vw, 18%)');
+      animation: slidein 5s linear 0.3s infinite alternate;
     }
   }
   @keyframes slidein {
-    0% { transform: rotate(-90deg) translateX(0px); }
-    50% { transform: rotate(-90deg) translateX(-25px); }
-    100% { transform: rotate(-90deg) translateX(25px); }
+    0% {
+      transform: rotate(-90deg) translateX(0px);
+    }
+    50% {
+      transform: rotate(-90deg) translateX(-25px);
+    }
+    100% {
+      transform: rotate(-90deg) translateX(25px);
+    }
   }
   .hobbies {
-    margin: 0 auto;
     display: flex;
-    width: unquote('min(33vw, 33%)');
-    height: unquote('min(7.2vw, 12.5%)');
     flex-direction: column;
     justify-content: space-between;
+    width: unquote('min(36vw, 36%)');
+    height: unquote('min(7.2vw, 12.5%)');
+    margin: 0 auto;
+
     span:first-child {
-      font-family: $font-bold;
       position: relative;
+      bottom: 8%;
+      font-family: $font-bold;
       font-size: unquote('min(0.9rem, 0.8vw)');
       line-height: 1;
-      bottom: 8%;
       letter-spacing: 0.05rem;
     }
   }
-  .hobbiesContainer{
+  .hobbiesContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    div{
-      width:unquote('min(25%, 9vw)');
+
+    div {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      img{
+      width: unquote('min(25%, 9vw)');
+
+      img {
         padding-bottom: unquote('min(11%, 0.9vw)');
       }
     }
-    span{
+
+    span {
       font-family: $font-bold;
       font-size: unquote('min(0.68vw, 0.8rem)');
-      text-transform: uppercase;
       letter-spacing: 0.07rem;
-      &:nth-child(3){
+      text-transform: uppercase;
+
+      &:nth-child(3) {
+        padding-top: unquote('min(11%, 0.9vw)');
+        padding-bottom: unquote('min(3%, 0.2vw)');
+      }
+
+    }
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-height: 1366px) and (orientation: landscape) {
+  .section {
+    width: 100%;
+    max-width: 1366px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: $background-white;
+    color: #000;
+    font-family: $font-regular;
+  }
+
+  .nav {
+    width: 21.5rem;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .link {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    margin-top: -0.8125rem;
+    margin-left: 4.4rem;
+
+  }
+  //left container with text and LinkedIn link
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: unquote('min(67vw, 76%)');
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+    height: 100%;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 64%;
+    padding-left: 15.3%;
+
+    span {
+      display: inline-block;
+      font-family: $font-bold;
+      font-size: unquote('min(5.07rem, 4.23vw)');
+      line-height: unquote('min(6rem, 5vw)');
+      letter-spacing: 0.1rem;
+
+      &:first-child {
+        position: relative;
+        padding-bottom: 0.7%;
+        font-size: unquote('min(0.9rem, 0.8vw)');
+        line-height: 1;
+        letter-spacing: 0.05rem;
+      }
+
+      &:nth-child(2) {
+        color: $primary-color;
+      }
+    }
+
+
+    p {
+      width: 78%;
+      color: #000;
+      font-size: unquote('min(1rem, 1vw)');
+      line-height: unquote('min(2.1rem, 1.75vw)');
+      text-align: justify;
+      text-align-last: justify;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+
+      a {
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 3px;
+        color: $primary-color;
+        font-family: $font-bold;
+        text-decoration: none;
+      }
+    }
+  }
+  //Right container with images and animation
+  .decorationContainer {
+    position: relative;
+    width: 50%;
+    height: unquote('min(46vw, 100%)');
+    max-height: 1080px;
+  }
+
+  .decoration {
+    position: absolute;
+    z-index: 4;
+    font-size: unquote('min(0.9rem, 0.8vw)');
+    line-height: 1;
+    letter-spacing: 0.05rem;
+    transform: rotate(-90deg);
+
+    &.positionHtml {
+      top: unquote('min(9vw, 19%)');
+      left: unquote('min(4.3vw, 8.5%)');
+      animation: slidein 5s linear 0.7s infinite alternate;
+    }
+
+    &.positionReact {
+      bottom: unquote('min(5.6vw, 12.2%)');
+      left: unquote('min(11.3vw, 22.8%)');
+      animation: slidein 5s linear 1s infinite alternate;
+    }
+
+    &.positionScript {
+      right: unquote('min(15.8vw, 31.5%)');
+      bottom: unquote('min(5.6vw, 12.2%)');
+      animation: slidein 5s linear 2.3s infinite alternate;
+    }
+
+    &.positionWebpack {
+      top: unquote('min(10vw, 21.5%)');
+      right: unquote('min(9vw, 18%)');
+      animation: slidein 5s linear 0.3s infinite alternate;
+    }
+  }
+  @keyframes slidein {
+    0% {
+      transform: rotate(-90deg) translateX(0px);
+    }
+    50% {
+      transform: rotate(-90deg) translateX(-25px);
+    }
+    100% {
+      transform: rotate(-90deg) translateX(25px);
+    }
+  }
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: unquote('min(36vw, 36%)');
+    height: unquote('min(7.2vw, 12.5%)');
+    margin: 0 auto;
+
+    span:first-child {
+      position: relative;
+      bottom: 8%;
+      font-family: $font-bold;
+      font-size: unquote('min(0.9rem, 0.8vw)');
+      line-height: 1;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .hobbiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: unquote('min(25%, 9vw)');
+
+      img {
+        padding-bottom: unquote('min(11%, 0.9vw)');
+      }
+    }
+
+    span {
+      font-family: $font-bold;
+      font-size: unquote('min(0.68vw, 0.8rem)');
+      letter-spacing: 0.07rem;
+      text-transform: uppercase;
+
+      &:nth-child(3) {
+        padding-top: unquote('min(11%, 0.9vw)');
+        padding-bottom: unquote('min(3%, 0.2vw)');
+      }
+
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
+  .section {
+    width: 100%;
+    max-width: 1920px;
+    height: unquote('min(100vh, 1080px)');
+    max-height: 1080px;
+    margin: 0 auto;
+    background-color: $background-white;
+    color: #000;
+    font-family: $font-regular;
+  }
+
+  .nav {
+    width: 21.5rem;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .link {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    margin-top: -0.8125rem;
+    margin-left: 4.4rem;
+
+  }
+  //left container with text and LinkedIn link
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: unquote('min(46.3vw, 82.5%)');
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+    height: 100%;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 64%;
+    padding-left: 15.3%;
+
+    span {
+      display: inline-block;
+      font-family: $font-bold;
+      font-size: unquote('min(5.07rem, 4.23vw)');
+      line-height: unquote('min(6rem, 5vw)');
+      letter-spacing: 0.1rem;
+
+      &:first-child {
+        position: relative;
+        padding-bottom: 0.7%;
+        font-size: unquote('min(0.9rem, 0.8vw)');
+        line-height: 1;
+        letter-spacing: 0.05rem;
+      }
+
+      &:nth-child(2) {
+        color: $primary-color;
+      }
+    }
+
+
+    p {
+      width: 78%;
+      color: #000;
+      font-size: unquote('min(0.76rem, 0.65vw)');
+      line-height: unquote('min(1.9rem, 1.55vw)');
+      text-align: justify;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+
+      a {
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 3px;
+        color: $primary-color;
+        font-family: $font-bold;
+        text-decoration: none;
+      }
+    }
+  }
+  //Right container with images and animation
+  .decorationContainer {
+    position: relative;
+    width: 50%;
+    height: unquote('min(46vw, 100%)');
+    max-height: 1080px;
+  }
+
+  .decoration {
+    position: absolute;
+    z-index: 4;
+    font-size: unquote('min(0.9rem, 0.8vw)');
+    line-height: 1;
+    letter-spacing: 0.05rem;
+    transform: rotate(-90deg);
+
+    &.positionHtml {
+      top: unquote('min(9vw, 19%)');
+      left: unquote('min(4.3vw, 8.5%)');
+      animation: slidein 5s linear 0.7s infinite alternate;
+    }
+
+    &.positionReact {
+      bottom: unquote('min(5.6vw, 12.2%)');
+      left: unquote('min(11.3vw, 22.8%)');
+      animation: slidein 5s linear 1s infinite alternate;
+    }
+
+    &.positionScript {
+      right: unquote('min(15.8vw, 31.5%)');
+      bottom: unquote('min(5.6vw, 12.2%)');
+      animation: slidein 5s linear 2.3s infinite alternate;
+    }
+
+    &.positionWebpack {
+      top: unquote('min(10vw, 21.5%)');
+      right: unquote('min(9vw, 18%)');
+      animation: slidein 5s linear 0.3s infinite alternate;
+    }
+  }
+  @keyframes slidein {
+    0% {
+      transform: rotate(-90deg) translateX(0px);
+    }
+    50% {
+      transform: rotate(-90deg) translateX(-25px);
+    }
+    100% {
+      transform: rotate(-90deg) translateX(25px);
+    }
+  }
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: unquote('min(33vw, 33%)');
+    height: unquote('min(7.2vw, 12.5%)');
+    margin: 0 auto;
+
+    span:first-child {
+      position: relative;
+      bottom: 8%;
+      font-family: $font-bold;
+      font-size: unquote('min(0.9rem, 0.8vw)');
+      line-height: 1;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .hobbiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: unquote('min(25%, 9vw)');
+
+      img {
+        padding-bottom: unquote('min(11%, 0.9vw)');
+      }
+    }
+
+    span {
+      font-family: $font-bold;
+      font-size: unquote('min(0.68vw, 0.8rem)');
+      letter-spacing: 0.07rem;
+      text-transform: uppercase;
+
+      &:nth-child(3) {
         padding-top: unquote('min(11%, 0.9vw)');
         padding-bottom: unquote('min(3%, 0.2vw)');
       }

@@ -1,335 +1,14 @@
 @import "fonts";
 @import "colors";
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px) {
   .section {
-    margin: 0 auto;
     width: 100%;
-    height: 50vh;
-    max-width: 768px;
-    background-color: $background-black;
-    color: #fff;
-    font-family: $font-regular;
-  }
-  //left container with text and GitHub link
-  .contentContainer {
-    width: 100%;
-    height: 82.5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .textContainer {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-    height: 100%;
-    align-items: start;
-    justify-content: center;
-  }
-
-
-  .textContainerContent {
-    display: flex;
-    flex-direction: column;
-    padding-left: unquote('min(7.4vw, 15.5%)');
-    padding-top: unquote('min(3.5vw, 7.5%)');
-    .text{
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      span {
-        display: inline-block;
-        font-family: $font-bold;
-        font-size: unquote('min(5.07rem, 4.23vw)');
-        line-height: unquote('min(6rem, 5vw)');
-        top: 3%;
-        letter-spacing: 0.16rem;
-
-        &:first-child {
-          color: $decoration-color;
-          position: relative;
-          font-size: unquote('min(0.9rem, 0.8vw)');
-          line-height: 1;
-          padding-bottom: 2%;
-          letter-spacing: 0.05rem;
-        }
-
-        &:nth-child(2) {
-          color: $primary-color;
-        }
-      }
-    }
-
-    p {
-      width: 73%;
-      margin-top: unquote('min(0.5vw, 3%)');
-      text-transform: uppercase;
-      line-height: unquote('min(1.9rem, 1.55vw)');
-      font-size: unquote('min(0.76rem, 0.65vw)');
-      color: #fff;
-      letter-spacing: 0.16rem;
-      text-align: justify;
-    }
-  }
-
-  .gitLink{
-    display: flex;
-    align-items: center;
-    margin-top: unquote('min(0.5vw, 3%)');
-    div{
-      padding-right: 20px;
-    }
-    span{
-      color: #ffcc00;
-      font-family: $font-regular;
-      text-decoration: none;
-      padding-bottom: 3px;
-      border-bottom: 1px solid #ffcc00;
-      a{
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #ffcc00;
-        font-family: $font-regular;
-        font-size: 0.77rem;
-        padding-bottom: 3px;
-        border-bottom: 1px solid #ffcc00;
-      }
-    }
-  }
-
-  // Carousel
-
-  .carousel {
-    position: relative;
-    width: 52%;
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
-  // carousel component styles
-  .carouselContainer {
-    width: 100%;
-    height:76%;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-
-  .arrowContainer{
-    position: absolute;
-    right: 5%;
-    top:37%;
-    z-index: 2;
-  }
-  .arrowPrev{
-    width: 2vw;
-    height: 2vw;
-    &:hover{
-      stroke: #000;
-    }
-  }
-
-  .arrowNext{
-    width: 2vw;
-    height: 2vw;
-    &:hover{
-      stroke: #fff;
-    }
-  }
-  .imgContainer{
-    position: relative;
-    width:100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .wrapper{
-    position: absolute;
-    display: flex;
-    overflow: hidden;
-    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    img{
-      flex: 1;
-      width: unquote('min(34.2vw, 40.8rem)');
-      margin: 0 0.8vw;
-    }
-  }
-
-}
-@media only screen and (min-device-width:768px) and (max-device-height:  1366px){
-  .section {
-    margin: 0 auto;
-    width: 100%;
-    height: 50vh;
     max-width: 1366px;
-    //height: unquote('min(100vh, 1080px)');
-    background-color: $background-black;
-    color: #fff;
-    font-family: $font-regular;
-  }
-  //left container with text and GitHub link
-  .contentContainer {
-    width: 100%;
-    height: 84.5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .textContainer {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-    height: 100%;
-    align-items: start;
-    justify-content: center;
-  }
-
-
-  .textContainerContent {
-    display: flex;
-    flex-direction: column;
-    padding-left: unquote('min(7.4vw, 15.5%)');
-    padding-top: unquote('min(3.5vw, 7.5%)');
-    .text{
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      span {
-        display: inline-block;
-        font-family: $font-bold;
-        font-size: unquote('min(5.07rem, 4.23vw)');
-        line-height: unquote('min(6rem, 5vw)');
-        top: 3%;
-        letter-spacing: 0.16rem;
-
-        &:first-child {
-          color: $decoration-color;
-          position: relative;
-          font-size: unquote('min(0.9rem, 0.8vw)');
-          line-height: 1;
-          padding-bottom: 2%;
-          letter-spacing: 0.05rem;
-        }
-
-        &:nth-child(2) {
-          color: $primary-color;
-        }
-      }
-    }
-
-    p {
-      width: 73%;
-      margin-top: unquote('min(0.5vw, 3%)');
-      text-transform: uppercase;
-      line-height: unquote('min(1.9rem, 1.55vw)');
-      font-size: unquote('min(0.76rem, 0.65vw)');
-      color: #fff;
-      letter-spacing: 0.16rem;
-      text-align: justify;
-    }
-  }
-
-  .gitLink{
-    display: flex;
-    align-items: center;
-    margin-top: unquote('min(0.5vw, 3%)');
-    div{
-      padding-right: 20px;
-    }
-    span{
-      color: #ffcc00;
-      font-family: $font-regular;
-      text-decoration: none;
-      padding-bottom: 3px;
-      border-bottom: 1px solid #ffcc00;
-      a{
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #ffcc00;
-        font-family: $font-regular;
-        font-size: 0.77rem;
-        padding-bottom: 3px;
-        border-bottom: 1px solid #ffcc00;
-      }
-    }
-  }
-
-  // Carousel
-
-  .carousel {
-    position: relative;
-    width: 52%;
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
-  // carousel component styles
-  .carouselContainer {
-    width: 100%;
-    height:76%;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-
-  .arrowContainer{
-    position: absolute;
-    right: 6%;
-    top:33%;
-    z-index: 2;
-  }
-  .arrowPrev{
-    width: 2vw;
-    height: 2vw;
-    &:hover{
-      stroke: #000;
-    }
-  }
-
-  .arrowNext{
-    width: 2vw;
-    height: 2vw;
-    &:hover{
-      stroke: #fff;
-    }
-  }
-  .imgContainer{
-    position: relative;
-    width:100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .wrapper{
-    position: absolute;
-    display: flex;
-    overflow: hidden;
-    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    img{
-      flex: 1;
-      width: unquote('min(34.2vw, 40.8rem)');
-      margin: 0 0.8vw;
-    }
-  }
-
-}
-@media only screen and (min-device-width: 414px) and (max-device-width: 812px){
-  .section {
-    margin: 0 auto;
-    width: 100%;
     height: 100vh;
-    max-width: 1366px;
     max-height: 1080px;
+    margin: 0 auto;
     background-color: $background-black;
     color: #fff;
     font-family: $font-regular;
@@ -337,49 +16,51 @@
 
   //left container with text and GitHub link
   .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    flex-direction: column;
   }
 
   .textContainer {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    //margin-top: 28vh;
     width: 95%;
     height: 80%;
-    //margin-top: 28vh;
-    align-items: center;
-    justify-content: flex-end;
   }
 
 
   .textContainerContent {
     display: flex;
     flex-direction: column;
-    padding-left: 2%;
+    margin-left: 6%;
     padding-bottom: 5%;
-    .text{
+
+    .text {
       display: flex;
       flex-direction: column;
-      align-items: start;
       justify-content: center;
+      align-items: start;
       width: 100%;
+
       span {
+        top: 3%;
         display: inline-block;
         font-family: $font-bold;
         font-size: 14vw;
         line-height: 13vw;
         letter-spacing: 0.1rem;
-        top: 3%;
 
         &:first-child {
-          color: $decoration-color;
-          font-size:1.1vh;
-          line-height: 1;
           padding-bottom: 3vh;
+          color: $decoration-color;
+          font-size: 1.1vh;
+          line-height: 1;
           letter-spacing: 0.05rem;
         }
 
@@ -392,38 +73,41 @@
     p {
       width: 100%;
       margin-top: 3vh;
-      text-transform: uppercase;
-      line-height: unquote('min(1.9rem, 1.55vw)');
-      font-size: 1vh;
       color: #fff;
+      font-size: 1vh;
+      line-height: 2.5vh;
       letter-spacing: 0.16rem;
-      text-align: justify;
+      text-transform: uppercase;
     }
   }
 
-  .gitLink{
+  .gitLink {
     display: flex;
     margin-top: 1vh;
-    div{
+
+    div {
       padding-right: 12px;
-        svg{
-          width: 18px;
-        }
+
+      svg {
+        width: 18px;
+      }
     }
-    span{
-      padding-top:3px;
+
+    span {
+      padding-top: 3px;
+      padding-bottom: 3px;
       color: #ffcc00;
       font-family: $font-regular;
       text-decoration: none;
-      padding-bottom: 3px;
-      a{
-        text-transform: uppercase;
-        text-decoration: none;
+
+      a {
+        border-bottom: 1px solid #ffcc00;
+        padding-bottom: 3px;
         color: #ffcc00;
         font-family: $font-regular;
         font-size: 0.77rem;
-        padding-bottom: 3px;
-        border-bottom: 1px solid #ffcc00;
+        text-decoration: none;
+        text-transform: uppercase;
       }
     }
   }
@@ -431,118 +115,500 @@
 
   .carousel {
     position: relative;
-    width: 100%;
-    height:50%;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50%;
   }
   // carousel component styles
   .carouselContainer {
-    width: 100%;
-    height:76%;
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 76%;
+  }
+  .carouselContainer::after {
+    position: absolute;
+    top: 0;
+    left: unquote('min(83vw, 40vh)');;
+    display: flex;
+    justify-content: end;
+    //width: 18vw;
+    width: unquote('max(25vw, 47vw)');
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
   }
 
-  .arrowContainer{
+  .arrowContainer {
     position: absolute;
-    right: 5%;
     z-index: 2;
+    right: 5%;
+    display: none;
   }
-  .arrowPrev{
+  .arrowPrev {
     width: 2vw;
     height: 2vw;
-    &:hover{
+
+    &:hover {
       stroke: #000;
     }
   }
 
-  .arrowNext{
+  .arrowNext {
     width: 2vw;
     height: 2vw;
-    &:hover{
+
+    &:hover {
       stroke: #fff;
     }
   }
-  .imgContainer{
+  .imgContainer {
     position: relative;
-    width:100%;
-    height: 100%;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
 
-  .wrapper{
-    margin-left: 6%;
+  .wrapper {
     position: absolute;
     display: flex;
     overflow: hidden;
+    margin-left: 6%;
     transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    img{
+
+    img {
       flex: 1;
       width: 31vh;
       height: 31vh;
-      margin-right:10vw;
+      margin-right: 10vw;
     }
   }
 
 
 }
-@media only screen and (min-device-width: 1025px){
+
+@media only screen and (min-device-width: 768px) and (max-device-height: 1366px) {
   .section {
-    margin: 0 auto;
     width: 100%;
-    height: unquote('min(100vh, 1080px)');
-    max-width: 1920px;
+    max-width: 1366px;
+    height: 50vh;
+    margin: 0 auto;
+    //height: unquote('min(100vh, 1080px)');
     background-color: $background-black;
     color: #fff;
     font-family: $font-regular;
   }
   //left container with text and GitHub link
   .contentContainer {
-    width: 100%;
-    height: 82.5%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 84.5%;
   }
 
   .textContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: start;
     width: 48%;
     height: 100%;
-    align-items: start;
-    justify-content: center;
   }
 
 
   .textContainerContent {
     display: flex;
     flex-direction: column;
-    padding-left: unquote('min(7.4vw, 15.5%)');
     padding-top: unquote('min(3.5vw, 7.5%)');
-    .text{
+    padding-left: unquote('min(7.4vw, 15.5%)');
+
+    .text {
       display: flex;
       flex-direction: column;
-      align-items: start;
       justify-content: center;
+      align-items: start;
+
       span {
-        color: $decoration-color;
+        top: 3%;
         display: inline-block;
         font-family: $font-bold;
         font-size: unquote('min(5.07rem, 4.23vw)');
         line-height: unquote('min(6rem, 5vw)');
-        top: 3%;
         letter-spacing: 0.16rem;
 
         &:first-child {
           position: relative;
+          padding-bottom: 2%;
+          color: $decoration-color;
           font-size: unquote('min(0.9rem, 0.8vw)');
           line-height: 1;
+          letter-spacing: 0.05rem;
+        }
+
+        &:nth-child(2) {
+          color: $primary-color;
+        }
+      }
+    }
+
+    p {
+      width: 73%;
+      margin-top: unquote('min(0.5vw, 3%)');
+      color: #fff;
+      font-size: unquote('min(1rem, 1vw)');
+      line-height: unquote('min(2.1rem, 1.75vw)');
+      text-align: justify;
+      letter-spacing: 0.11rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .gitLink {
+    display: flex;
+    align-items: center;
+    margin-top: unquote('min(0.5vw, 3%)');
+
+    div {
+      padding-right: 20px;
+    }
+
+    span {
+      border-bottom: 1px solid #ffcc00;
+      padding-bottom: 3px;
+      color: #ffcc00;
+      font-family: $font-regular;
+      text-decoration: none;
+
+      a {
+        border-bottom: 1px solid #ffcc00;
+        padding-bottom: 3px;
+        color: #ffcc00;
+        font-family: $font-regular;
+        font-size: 0.77rem;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // Carousel
+
+  .carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 52%;
+    height: 100%;
+  }
+  // carousel component styles
+  .carouselContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 76%;
+  }
+  .carouselContainer::after {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+  }
+  .arrowContainer {
+    position: absolute;
+    z-index: 2;
+    top: 33%;
+    right: 6%;
+    display: none;
+  }
+  .arrowPrev {
+    width: 2vw;
+    height: 2vw;
+
+    &:hover {
+      stroke: #000;
+    }
+  }
+
+  .arrowNext {
+    width: 2vw;
+    height: 2vw;
+
+    &:hover {
+      stroke: #fff;
+    }
+  }
+  .imgContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .wrapper {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    img {
+      flex: 1;
+      width: unquote('min(34.2vw, 40.8rem)');
+      margin: 0 0.8vw;
+    }
+  }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-height: 1366px) and (orientation: landscape) {
+  .section {
+    width: 100%;
+    max-width: 1366px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: $background-black;
+    color: #fff;
+    font-family: $font-regular;
+  }
+  //left container with text and GitHub link
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 84.5%;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 48%;
+    height: 100%;
+  }
+
+
+  .textContainerContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: unquote('min(3.5vw, 7.5%)');
+    padding-left: unquote('min(7.4vw, 15.5%)');
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      span {
+        top: 3%;
+        display: inline-block;
+        font-family: $font-bold;
+        font-size: unquote('min(5.07rem, 4.23vw)');
+        line-height: unquote('min(6rem, 5vw)');
+        letter-spacing: 0.16rem;
+
+        &:first-child {
+          position: relative;
           padding-bottom: 2%;
+          color: $decoration-color;
+          font-size: unquote('min(0.9rem, 0.8vw)');
+          line-height: 1;
+          letter-spacing: 0.05rem;
+        }
+
+        &:nth-child(2) {
+          color: $primary-color;
+        }
+      }
+    }
+
+    p {
+      width: 73%;
+      margin-top: 0.5vw;
+      color: #fff;
+      font-size: unquote('min(1rem, 1vw)');
+      line-height: unquote('min(2.1rem, 1.75vw)');
+      letter-spacing: 0.11rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .gitLink {
+    display: flex;
+    align-items: center;
+    margin-top: unquote('min(0.5vw, 3%)');
+
+    div {
+      padding-right: 20px;
+    }
+
+    span {
+      border-bottom: 1px solid #ffcc00;
+      padding-bottom: 3px;
+      color: #ffcc00;
+      font-family: $font-regular;
+      text-decoration: none;
+
+      a {
+        border-bottom: 1px solid #ffcc00;
+        padding-bottom: 3px;
+        color: #ffcc00;
+        font-family: $font-regular;
+        font-size: 0.77rem;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // Carousel
+
+  .carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 52%;
+    height: 100%;
+  }
+  // carousel component styles
+  .carouselContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 76%;
+  }
+  .carouselContainer::after {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+  }
+
+  .arrowContainer {
+    position: absolute;
+    z-index: 2;
+    top: 33%;
+    right: 6%;
+    display: none;
+  }
+  .arrowPrev {
+    width: 2vw;
+    height: 2vw;
+
+    &:hover {
+      stroke: #000;
+    }
+  }
+
+  .arrowNext {
+    width: 2vw;
+    height: 2vw;
+
+    &:hover {
+      stroke: #fff;
+    }
+  }
+  .imgContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .wrapper {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    img {
+      flex: 1;
+      width: unquote('min(34.2vw, 40.8rem)');
+      margin: 0 0.8vw;
+    }
+  }
+
+}
+
+@media only screen and (min-device-width: 1025px) {
+  .section {
+    width: 100%;
+    max-width: 1920px;
+    height: unquote('min(100vh, 1080px)');
+    margin: 0 auto;
+    background-color: $background-black;
+    color: #fff;
+    font-family: $font-regular;
+  }
+  //left container with text and GitHub link
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 82.5%;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 48%;
+    height: 100%;
+  }
+
+
+  .textContainerContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: unquote('min(3.5vw, 7.5%)');
+    padding-left: unquote('min(7.4vw, 15.5%)');
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      span {
+        top: 3%;
+        display: inline-block;
+        color: $decoration-color;
+        font-family: $font-bold;
+        font-size: unquote('min(5.07rem, 4.23vw)');
+        line-height: unquote('min(6rem, 5vw)');
+        letter-spacing: 0.16rem;
+
+        &:first-child {
+          position: relative;
+          padding-bottom: 2%;
+          font-size: unquote('min(0.9rem, 0.8vw)');
+          line-height: 1;
           letter-spacing: 0.05rem;
         }
 
@@ -554,35 +620,38 @@
 
     p {
       margin-top: unquote('min(0.5vw, 3%)');
-      text-transform: uppercase;
-      line-height: unquote('min(1.9rem, 1.55vw)');
-      font-size: unquote('min(0.76rem, 0.65vw)');
       color: #fff;
-      letter-spacing: 0.16rem;
+      font-size: unquote('min(0.76rem, 0.65vw)');
+      line-height: unquote('min(1.9rem, 1.55vw)');
       text-align: justify;
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
     }
   }
 
-  .gitLink{
+  .gitLink {
     display: flex;
     align-items: center;
     margin-top: unquote('min(0.5vw, 3%)');
-    div{
+
+    div {
       padding-right: 20px;
     }
-    span{
+
+    span {
+      border-bottom: 1px solid #ffcc00;
+      padding-bottom: 3px;
       color: #ffcc00;
       font-family: $font-regular;
       text-decoration: none;
-      padding-bottom: 3px;
-      border-bottom: 1px solid #ffcc00;
-      a{
-        text-transform: uppercase;
-        text-decoration: none;
+
+      a {
+        border-bottom: 1px solid #ffcc00;
+        padding-bottom: 3px;
         color: #ffcc00;
         font-family: $font-regular;
-        padding-bottom: 3px;
-        border-bottom: 1px solid #ffcc00;
+        text-decoration: none;
+        text-transform: uppercase;
       }
     }
   }
@@ -591,54 +660,71 @@
 
   .carousel {
     position: relative;
-    width: 52%;
-    height:100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 52%;
+    height: 100%;
   }
   // carousel component styles
   .carouselContainer {
-    width: 100%;
-    height:76%;
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 76%;
   }
 
-  .arrowContainer{
+  .carouselContainer::after {
     position: absolute;
-    right: 5%;
-    z-index: 2;
+    top: 0;
+    left: 70%;
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
   }
-  .arrowPrev{
+
+  .arrowContainer {
+    position: absolute;
+    z-index: 2;
+    top: unquote('min(21vw, 46%)');
+    right: 5%;
+    display: block;
+  }
+  .arrowPrev {
     width: 2vw;
     height: 2vw;
-    &:hover{
+
+    &:hover {
       stroke: #000;
     }
   }
 
-  .arrowNext{
+  .arrowNext {
     width: 2vw;
     height: 2vw;
-    &:hover{
+
+    &:hover {
       stroke: #fff;
     }
   }
-  .imgContainer{
+  .imgContainer {
     position: relative;
-    width:100%;
-    height: 100%;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
 
-  .wrapper{
+  .wrapper {
     position: absolute;
     display: flex;
     overflow: hidden;
     transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    img{
+
+    img {
       flex: 1;
       width: unquote('min(34.2vw, 40.8rem)');
       margin: 0 0.8vw;
