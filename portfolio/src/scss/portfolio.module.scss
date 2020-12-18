@@ -124,7 +124,6 @@
   }
   // carousel component styles
   .carouselContainer {
-<<<<<<< HEAD
     display: flex;
     align-items: center;
     width: 100%;
@@ -159,19 +158,18 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
-    &::after {
-      position: absolute;
-      top: 0;
-      //left: 73vw;
-      left: unquote('min(78vw, 40vh)');
-      display: flex;
-      justify-content: end;
-      width: 30%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      content: "";
-      overflow: hidden;
-    }
+    //&::after {
+    //  position: absolute;
+    //  top: 0;
+    //  left: unquote('min(78vw, 40vh)');
+    //  display: flex;
+    //  justify-content: end;
+    //  width: 30%;
+    //  height: 100%;
+    //  background-color: rgba(0, 0, 0, 0.5);
+    //  content: "";
+    //  overflow: hidden;
+    //}
   }
 
   .wrapper {
@@ -215,14 +213,10 @@
   }
 
   .textContainer {
-=======
->>>>>>> origin/main
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-<<<<<<< HEAD
-    //margin-top: 28vh;
     width: 95%;
     height: 80%;
   }
@@ -321,22 +315,6 @@
     align-items: center;
     width: 100%;
     height: 76%;
-=======
-    width: 100%;
-    height: 76%;
-  }
-  .carouselContainer::after {
-    position: absolute;
-    top: 0;
-    left: unquote('min(83vw, 40vh)');;
-    display: flex;
-    justify-content: end;
-    //width: 18vw;
-    width: unquote('max(25vw, 47vw)');
-    height: 80%;
-    background-color: rgba(0, 0, 0, 0.5);
-    content: "";
->>>>>>> origin/main
   }
 
   .arrowContainer {
@@ -367,11 +345,9 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     &::after {
       position: absolute;
       top: 0;
-      //left: 73vw;
       left: unquote('min(78vw, 40vh)');
       display: flex;
       justify-content: end;
@@ -381,8 +357,7 @@
       content: "";
       overflow: hidden;
     }
-=======
->>>>>>> origin/main
+
   }
 
   .wrapper {
@@ -391,13 +366,9 @@
     overflow: hidden;
     margin-left: 6%;
     transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
     img {
       flex: 1;
-<<<<<<< HEAD
       overflow: hidden;
-=======
->>>>>>> origin/main
       width: 31vh;
       height: 31vh;
       margin-right: 10vw;

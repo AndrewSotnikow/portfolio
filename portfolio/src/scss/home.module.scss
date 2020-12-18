@@ -10,7 +10,6 @@
     max-width: 768px;
     height: 100vh;
     max-height: 1080px;
-<<<<<<< HEAD
     margin: 0 auto;
     background-color: $background-black;
     color: #fff;
@@ -552,8 +551,6 @@
     width: 89%;
     height: 100%;
     margin: 0 auto;
-=======
-    margin: 0 auto;
     background-color: $background-black;
     color: #fff;
     font-family: $font-regular;
@@ -708,7 +705,6 @@
     width: 89%;
     height: 100%;
     margin: 0 auto;
->>>>>>> origin/main
   }
 
 
@@ -1668,7 +1664,7 @@
 
     & > button {
       width: 39%;
-      height: unquote('max(2.9vw, 4.5vh)');
+      height: unquote('max(1.9vw, 4.5vh)');
       border: 2px solid $primary-color;
       border-radius: 1.9rem;
       background-color: transparent;
