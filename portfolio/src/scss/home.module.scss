@@ -2,392 +2,392 @@
 @import "colors";
 
 
-@media only screen and (min-width: 360px) and (max-width: 767px) {
-
-  .section {
-    overflow: hidden;
-    width: 100%;
-    max-width: 768px;
-    height: 100vh;
-    max-height: 1080px;
-    margin: 0 auto;
-    background-color: $background-black;
-    color: #fff;
-    font-family: $font-regular;
-  }
-
-  //header
-  .nav {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 10%;
-    padding-top: 0.5rem;
-
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
-  .navLink {
-    color: #000;
-    font-family: $font-bold;
-    font-size: unquote('min(7vw, 4vh)');
-    font-weight: bolder;
-    text-decoration: none;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-
-    &:hover {
-      color: $primary-color;
-      font-weight: 700;
-    }
-  }
-
-  // logo container
-  .logo {
-    margin-top: unquote('min(-13.5vw, -7.5vh)');
-    margin-left: unquote('min(5.5vw, 3.5vh)');
-
-  }
-  // logo size is here
-  .animation {
-    width: 23.3%;
-  }
-
-
-  //Burger menu start
-  .menuToggle {
-    position: relative;
-    z-index: 1;
-    top: unquote('min(4vw, 4vh)');
-    right: unquote('min(5vw, 3vh)');
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-
-  .menuToggle input {
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    width: unquote('min(7vw, 5vh)');
-    height: unquote('min(6vw, 4vh)');
-    opacity: 0;
-    cursor: pointer;
-  }
-
-  .menuToggle span {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    width: unquote('min(7vw, 4vh)');
-    height: unquote('min(0.8vw, 0.5vh)');
-    border-radius: 2px;
-    margin-bottom: unquote('min(1.3vw, 0.8vh)');
-    background: $primary-color;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    opacity 0.55s ease;
-    transform-origin: 5px 0px;
-  }
-
-  .menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-
-  .menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-
-  .menuToggle input:checked ~ span {
-    background: #36383F;
-    opacity: 1;
-    transform: rotate(45deg) translate(-3px, -1px);
-  }
-  .menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  .menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-
-  .menu {
-    position: absolute;
-
-    width: 34vw;
-    height: 35vh;
-    border-radius: 0 0 0 25px;
-    margin: -6vh 0 0 13vw;
-    padding: 18vh 5vh 13vh 7vh;
-    background-color: $primary-color;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-    transform: translate(0%, 0);
-    transform-origin: 0% 0%;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .menu li {
-    transition-delay: 2s;
-  }
-
-  .menuToggle input:checked ~ ul {
-    transform: translate(-100%, 0);
-  }
-  //Burger menu end
-
-
-  //text&buttons& images on the page
-  .contentContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-  }
-
-  //left container with text and buttons
-  .textContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 89%;
-    height: 100%;
-    margin: 0 auto;
-  }
-
-
-  .textContainerContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin-bottom: unquote('min(4vw, 2vh)');
-
-    div > span {
-      top: unquote('min(1vh, 0.9vw)');
-      display: inline-block;
-      font-family: $font-bold;
-      font-size: unquote('min(7.9vh, 14vw)');
-      line-height: unquote('min(9.5vh, 17vw)');
-      text-align: justify;
-      letter-spacing: 0.2rem;
-
-      &:first-child {
-        position: relative;
-        padding-bottom: unquote('min(3vh, 5vw)');
-        color: $decoration-color;
-        font-size: unquote('min(1.1vh, 1.8vw)');
-        line-height: 1;
-        letter-spacing: 0.05rem;
-      }
-
-      &:nth-child(2) {
-        color: $primary-color;
-      }
-    }
-
-    .text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
-    }
-
-    p {
-      width: 100%;
-      margin-top: unquote('min(3.5vw, 1.5vh)');
-      color: #fff;
-      font-size: unquote('min(1.9vw, 1.1vh)');
-      line-height: unquote('min(4.5vw, 2.5vh)');
-      text-align: justify;
-      letter-spacing: 0.07rem;
-      text-transform: uppercase;
-    }
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: unquote('min(11vw, 5vh)');
-    margin-bottom: unquote('min(12vw, 7vh)');
-
-    & > button {
-      width: unquote('min(40vw, 22.5vh)');
-      height: unquote('min(11vw, 6vh)');
-      border: 2px solid $primary-color;
-      border-radius: 1.9rem;
-      background-color: transparent;
-      color: $primary-color;
-      font-family: $font-bold;
-      font-size: unquote('min(1.8vh, 3.2vw)');
-      text-transform: uppercase;
-
-      & > a {
-        color: $primary-color;
-        text-decoration: none;
-      }
-
-      &:hover {
-        background-color: $primary-color;
-        color: #000;
-      }
-    }
-  }
-
-
-  //Right container with images and animation
-  .imageContainer {
-    position: relative;
-    top: -3%;
-    right: 4%;
-    display: none;
-    width: 40%;
-    height: 100%;
-
-    .abstract {
-      position: absolute;
-      z-index: 0;
-      left: 2%;
-      display: none;
-      overflow: hidden;
-      width: unquote('min(77%, 31vw)');
-      height: unquote('min(180%, 80vh)');
-      margin-top: 10.7%;
-      //!important need to override default size of tsParticles library
-      //any other method don't !
-      canvas {
-        position: absolute !important;
-        width: 100% !important;
-        height: 100% !important;
-      }
-    }
-
-    //It's Me=)
-    .portrait {
-      position: absolute;
-      z-index: 1;
-      top: unquote('min(-0.8vw, -4%)');
-      left: unquote('max(2vw, 5%)');
-      display: none;
-      width: unquote('max(26vw, 84.9%)');
-      max-width: 84.9%;
-    }
-  }
-
-  .decorFront {
-    position: absolute;
-    z-index: 3;
-    top: unquote('min(18.6vh, 51.5%)');
-    right: unquote('min(0.8vw, 2.2%)');
-    display: none;
-    width: 20%;
-
-    span {
-      display: block;
-      width: 100%;
-      font-family: $font-thin;
-      font-size: unquote('min(0.6vw, 0.75rem)');
-      letter-spacing: unquote('min(1.36vw, 1.5rem)');
-      text-transform: uppercase;
-
-      &:nth-child(2) {
-        margin: unquote('min(1.2vw, 1.56rem)') 0;
-      }
-    }
-  }
-
-  .decorEnd {
-    position: absolute;
-    z-index: 3;
-    bottom: unquote('min(5vw, 10.4%)');
-    left: unquote('min(13.1vw, 33%)');
-    display: none;
-
-    span {
-      display: block;
-      color: #000;
-      font-family: $font-bold;
-      font-size: unquote('min(0.6vw, 0.75rem)');
-      letter-spacing: unquote('min(1.36vw, 1.5rem)');
-      text-transform: uppercase;
-
-      &:nth-child(2) {
-        margin: unquote('min(1.2vw, 1.56rem)') 0;
-      }
-    }
-  }
-
-  .decorationContainer {
-    position: absolute;
-    z-index: 2;
-    display: none;
-    width: 100%;
-    height: unquote('min(46vw, 100%)');
-    max-height: 1080px;
-  }
-
-  .decoration {
-    position: absolute;
-    z-index: 4;
-    display: none;
-    color: $decoration-color;
-    font-size: unquote('min(0.9rem, 0.8vw)');
-    line-height: 1;
-    letter-spacing: 0.05rem;
-    transform: rotate(-90deg);
-
-    &.positionHtml {
-      top: unquote('min(6vw, 13%)');
-      left: unquote('min(-2.2vw, -5.9%)');
-      animation: slidein 5s linear 1s infinite alternate;
-    }
-
-    &.positionReact {
-      top: unquote('min(1.7vw, 4%)');
-      left: unquote('min(5.4vw, 13%)');
-      animation: slidein 5s linear 1.5s infinite alternate;
-    }
-
-    &.positionScript {
-      z-index: 1;
-      top: unquote('min(1.7vw, 4%)');
-      left: unquote('min(25.1vw, 63%)');
-      animation: slidein 5s linear 0.3s infinite alternate;
-    }
-
-    &.positionWebpack {
-      top: unquote('min(7vw, 15%)');
-      left: unquote('min(30.7vw, 76.5%)');
-      animation: slidein 5s linear 2s infinite alternate;
-    }
-  }
-
-  @keyframes slidein {
-    0% {
-      transform: rotate(-90deg) translateX(0px);
-    }
-    50% {
-      transform: rotate(-90deg) translateX(-25px);
-    }
-    100% {
-      transform: rotate(-90deg) translateX(25px);
-    }
-  }
-}
+//@media only screen and (min-width: 360px) and (max-width: 767px) {
+//
+//  .section {
+//    overflow: hidden;
+//    width: 100%;
+//    max-width: 768px;
+//    height: 100vh;
+//    max-height: 1080px;
+//    margin: 0 auto;
+//    background-color: $background-black;
+//    color: #fff;
+//    font-family: $font-regular;
+//  }
+//
+//  //header
+//  .nav {
+//    position: relative;
+//    display: flex;
+//    justify-content: flex-end;
+//    width: 100%;
+//    height: 10%;
+//    padding-top: 0.5rem;
+//
+//
+//    ul {
+//      display: flex;
+//      flex-direction: column;
+//      justify-content: space-between;
+//      align-items: center;
+//    }
+//  }
+//
+//  .navLink {
+//    color: #000;
+//    font-family: $font-bold;
+//    font-size: unquote('min(7vw, 4vh)');
+//    font-weight: bolder;
+//    text-decoration: none;
+//    letter-spacing: 0.1rem;
+//    text-transform: uppercase;
+//
+//    &:hover {
+//      color: $primary-color;
+//      font-weight: 700;
+//    }
+//  }
+//
+//  // logo container
+//  .logo {
+//    margin-top: unquote('min(-13.5vw, -7.5vh)');
+//    margin-left: unquote('min(5.5vw, 3.5vh)');
+//
+//  }
+//  // logo size is here
+//  .animation {
+//    width: 23.3%;
+//  }
+//
+//
+//  //Burger menu start
+//  .menuToggle {
+//    position: relative;
+//    z-index: 1;
+//    top: unquote('min(4vw, 4vh)');
+//    right: unquote('min(5vw, 3vh)');
+//    display: flex;
+//    flex-direction: column;
+//    align-items: flex-start;
+//    -webkit-user-select: none;
+//    user-select: none;
+//  }
+//
+//  .menuToggle input {
+//    position: absolute;
+//    z-index: 2;
+//    display: flex;
+//    width: unquote('min(7vw, 5vh)');
+//    height: unquote('min(6vw, 4vh)');
+//    opacity: 0;
+//    cursor: pointer;
+//  }
+//
+//  .menuToggle span {
+//    position: relative;
+//    z-index: 1;
+//    display: flex;
+//    width: unquote('min(7vw, 4vh)');
+//    height: unquote('min(0.8vw, 0.5vh)');
+//    border-radius: 2px;
+//    margin-bottom: unquote('min(1.3vw, 0.8vh)');
+//    background: $primary-color;
+//    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+//    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+//    opacity 0.55s ease;
+//    transform-origin: 5px 0px;
+//  }
+//
+//  .menuToggle span:first-child {
+//    transform-origin: 0% 0%;
+//  }
+//
+//  .menuToggle span:nth-last-child(2) {
+//    transform-origin: 0% 100%;
+//  }
+//
+//  .menuToggle input:checked ~ span {
+//    background: #36383F;
+//    opacity: 1;
+//    transform: rotate(45deg) translate(-3px, -1px);
+//  }
+//  .menuToggle input:checked ~ span:nth-last-child(3) {
+//    opacity: 0;
+//    transform: rotate(0deg) scale(0.2, 0.2);
+//  }
+//
+//  .menuToggle input:checked ~ span:nth-last-child(2) {
+//    transform: rotate(-45deg) translate(0, -1px);
+//  }
+//
+//  .menu {
+//    position: absolute;
+//
+//    width: 34vw;
+//    height: 35vh;
+//    border-radius: 0 0 0 25px;
+//    margin: -6vh 0 0 13vw;
+//    padding: 18vh 5vh 13vh 7vh;
+//    background-color: $primary-color;
+//    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+//    transform: translate(0%, 0);
+//    transform-origin: 0% 0%;
+//    -webkit-font-smoothing: antialiased;
+//  }
+//
+//  .menu li {
+//    transition-delay: 2s;
+//  }
+//
+//  .menuToggle input:checked ~ ul {
+//    transform: translate(-100%, 0);
+//  }
+//  //Burger menu end
+//
+//
+//  //text&buttons& images on the page
+//  .contentContainer {
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: space-between;
+//    align-items: center;
+//    width: 100%;
+//    height: 100vh;
+//  }
+//
+//  //left container with text and buttons
+//  .textContainer {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: start;
+//    width: 89%;
+//    height: 100%;
+//    margin: 0 auto;
+//  }
+//
+//
+//  .textContainerContent {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: start;
+//    margin-bottom: unquote('min(4vw, 2vh)');
+//
+//    div > span {
+//      top: unquote('min(1vh, 0.9vw)');
+//      display: inline-block;
+//      font-family: $font-bold;
+//      font-size: unquote('min(7.9vh, 14vw)');
+//      line-height: unquote('min(9.5vh, 17vw)');
+//      text-align: justify;
+//      letter-spacing: 0.2rem;
+//
+//      &:first-child {
+//        position: relative;
+//        padding-bottom: unquote('min(3vh, 5vw)');
+//        color: $decoration-color;
+//        font-size: unquote('min(1.1vh, 1.8vw)');
+//        line-height: 1;
+//        letter-spacing: 0.05rem;
+//      }
+//
+//      &:nth-child(2) {
+//        color: $primary-color;
+//      }
+//    }
+//
+//    .text {
+//      display: flex;
+//      flex-direction: column;
+//      justify-content: center;
+//      align-items: start;
+//    }
+//
+//    p {
+//      width: 100%;
+//      margin-top: unquote('min(3.5vw, 1.5vh)');
+//      color: #fff;
+//      font-size: unquote('min(1.9vw, 1.1vh)');
+//      line-height: unquote('min(4.5vw, 2.5vh)');
+//      text-align: justify;
+//      letter-spacing: 0.07rem;
+//      text-transform: uppercase;
+//    }
+//  }
+//
+//  .buttons {
+//    display: flex;
+//    justify-content: space-between;
+//    align-items: center;
+//    width: 100%;
+//    margin-top: unquote('min(11vw, 5vh)');
+//    margin-bottom: unquote('min(12vw, 7vh)');
+//
+//    & > button {
+//      width: unquote('min(40vw, 22.5vh)');
+//      height: unquote('min(11vw, 6vh)');
+//      border: 2px solid $primary-color;
+//      border-radius: 1.9rem;
+//      background-color: transparent;
+//      color: $primary-color;
+//      font-family: $font-bold;
+//      font-size: unquote('min(1.8vh, 3.2vw)');
+//      text-transform: uppercase;
+//
+//      & > a {
+//        color: $primary-color;
+//        text-decoration: none;
+//      }
+//
+//      &:hover {
+//        background-color: $primary-color;
+//        color: #000;
+//      }
+//    }
+//  }
+//
+//
+//  //Right container with images and animation
+//  .imageContainer {
+//    position: relative;
+//    top: -3%;
+//    right: 4%;
+//    display: none;
+//    width: 40%;
+//    height: 100%;
+//
+//    .abstract {
+//      position: absolute;
+//      z-index: 0;
+//      left: 2%;
+//      display: none;
+//      overflow: hidden;
+//      width: unquote('min(77%, 31vw)');
+//      height: unquote('min(180%, 80vh)');
+//      margin-top: 10.7%;
+//      //!important need to override default size of tsParticles library
+//      //any other method don't !
+//      canvas {
+//        position: absolute !important;
+//        width: 100% !important;
+//        height: 100% !important;
+//      }
+//    }
+//
+//    //It's Me=)
+//    .portrait {
+//      position: absolute;
+//      z-index: 1;
+//      top: unquote('min(-0.8vw, -4%)');
+//      left: unquote('max(2vw, 5%)');
+//      display: none;
+//      width: unquote('max(26vw, 84.9%)');
+//      max-width: 84.9%;
+//    }
+//  }
+//
+//  .decorFront {
+//    position: absolute;
+//    z-index: 3;
+//    top: unquote('min(18.6vh, 51.5%)');
+//    right: unquote('min(0.8vw, 2.2%)');
+//    display: none;
+//    width: 20%;
+//
+//    span {
+//      display: block;
+//      width: 100%;
+//      font-family: $font-thin;
+//      font-size: unquote('min(0.6vw, 0.75rem)');
+//      letter-spacing: unquote('min(1.36vw, 1.5rem)');
+//      text-transform: uppercase;
+//
+//      &:nth-child(2) {
+//        margin: unquote('min(1.2vw, 1.56rem)') 0;
+//      }
+//    }
+//  }
+//
+//  .decorEnd {
+//    position: absolute;
+//    z-index: 3;
+//    bottom: unquote('min(5vw, 10.4%)');
+//    left: unquote('min(13.1vw, 33%)');
+//    display: none;
+//
+//    span {
+//      display: block;
+//      color: #000;
+//      font-family: $font-bold;
+//      font-size: unquote('min(0.6vw, 0.75rem)');
+//      letter-spacing: unquote('min(1.36vw, 1.5rem)');
+//      text-transform: uppercase;
+//
+//      &:nth-child(2) {
+//        margin: unquote('min(1.2vw, 1.56rem)') 0;
+//      }
+//    }
+//  }
+//
+//  .decorationContainer {
+//    position: absolute;
+//    z-index: 2;
+//    display: none;
+//    width: 100%;
+//    height: unquote('min(46vw, 100%)');
+//    max-height: 1080px;
+//  }
+//
+//  .decoration {
+//    position: absolute;
+//    z-index: 4;
+//    display: none;
+//    color: $decoration-color;
+//    font-size: unquote('min(0.9rem, 0.8vw)');
+//    line-height: 1;
+//    letter-spacing: 0.05rem;
+//    transform: rotate(-90deg);
+//
+//    &.positionHtml {
+//      top: unquote('min(6vw, 13%)');
+//      left: unquote('min(-2.2vw, -5.9%)');
+//      animation: slidein 5s linear 1s infinite alternate;
+//    }
+//
+//    &.positionReact {
+//      top: unquote('min(1.7vw, 4%)');
+//      left: unquote('min(5.4vw, 13%)');
+//      animation: slidein 5s linear 1.5s infinite alternate;
+//    }
+//
+//    &.positionScript {
+//      z-index: 1;
+//      top: unquote('min(1.7vw, 4%)');
+//      left: unquote('min(25.1vw, 63%)');
+//      animation: slidein 5s linear 0.3s infinite alternate;
+//    }
+//
+//    &.positionWebpack {
+//      top: unquote('min(7vw, 15%)');
+//      left: unquote('min(30.7vw, 76.5%)');
+//      animation: slidein 5s linear 2s infinite alternate;
+//    }
+//  }
+//
+//  @keyframes slidein {
+//    0% {
+//      transform: rotate(-90deg) translateX(0px);
+//    }
+//    50% {
+//      transform: rotate(-90deg) translateX(-25px);
+//    }
+//    100% {
+//      transform: rotate(-90deg) translateX(25px);
+//    }
+//  }
+//}
 @media only screen and (min-width: 360px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3) {
 
   .section {
@@ -1088,6 +1088,14 @@
         background-color: $primary-color;
         color: #000;
       }
+      &:hover {
+        background-color: $primary-color;
+
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+      }
     }
   }
 
@@ -1383,6 +1391,14 @@
       &:hover {
         background-color: $primary-color;
         color: #000;
+      }
+      &:hover {
+        background-color: $primary-color;
+
+        a {
+          color: #000;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -1680,7 +1696,10 @@
 
       &:hover {
         background-color: $primary-color;
-        color: #000;
+        a{
+          color: #000;
+          text-decoration: none;
+        }
       }
     }
   }
