@@ -158,18 +158,18 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
-    //&::after {
-    //  position: absolute;
-    //  top: 0;
-    //  left: unquote('min(78vw, 40vh)');
-    //  display: flex;
-    //  justify-content: end;
-    //  width: 30%;
-    //  height: 100%;
-    //  background-color: rgba(0, 0, 0, 0.5);
-    //  content: "";
-    //  overflow: hidden;
-    //}
+    &::after {
+      position: absolute;
+      top: 0;
+      left: unquote('min(78vw, 40vh)');
+      display: flex;
+      justify-content: end;
+      width: 30%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      content: "";
+      overflow: hidden;
+    }
   }
 
   .wrapper {
