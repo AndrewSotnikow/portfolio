@@ -124,6 +124,7 @@
   }
   // carousel component styles
   .carouselContainer {
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     width: 100%;
@@ -214,10 +215,13 @@
   }
 
   .textContainer {
+=======
+>>>>>>> origin/main
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+<<<<<<< HEAD
     //margin-top: 28vh;
     width: 95%;
     height: 80%;
@@ -317,6 +321,22 @@
     align-items: center;
     width: 100%;
     height: 76%;
+=======
+    width: 100%;
+    height: 76%;
+  }
+  .carouselContainer::after {
+    position: absolute;
+    top: 0;
+    left: unquote('min(83vw, 40vh)');;
+    display: flex;
+    justify-content: end;
+    //width: 18vw;
+    width: unquote('max(25vw, 47vw)');
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+>>>>>>> origin/main
   }
 
   .arrowContainer {
@@ -347,6 +367,7 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     &::after {
       position: absolute;
       top: 0;
@@ -360,6 +381,8 @@
       content: "";
       overflow: hidden;
     }
+=======
+>>>>>>> origin/main
   }
 
   .wrapper {
@@ -371,7 +394,10 @@
 
     img {
       flex: 1;
+<<<<<<< HEAD
       overflow: hidden;
+=======
+>>>>>>> origin/main
       width: 31vh;
       height: 31vh;
       margin-right: 10vw;
