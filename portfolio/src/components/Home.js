@@ -43,7 +43,8 @@ class Home extends Component {
                             </div>
                             <div className={styles.buttons}>
                                 <button className={styles.getCv}><a download href="../img/3.png">pobierz cv</a></button>
-                                <button className={styles.github}><a download href="../img/3.png">moje prace</a>
+
+                                <button className={styles.github}><a href="https://github.com/AndrewSotnikow?tab=repositories" target="_blank" rel="noopener noreferrer">moje prace</a>
                                 </button>
                             </div>
                         </div>

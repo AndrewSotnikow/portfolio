@@ -163,7 +163,7 @@ form textarea.populated::placeholder {
   }
   form button {
     width: 51%;
-    height: 18%;
+    height: max(2.9vw, 5.5vh);
     border: 2px solid #ffcc00;
     border-radius: 1.9rem;
     margin-top: 3vh;
@@ -174,7 +174,8 @@ form textarea.populated::placeholder {
     text-transform: uppercase;
   }
   form button:hover {
-    background: #000;
+    background: #ffcc00;
+    color: #000;
     cursor: pointer;
   }
 }

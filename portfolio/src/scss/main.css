@@ -405,7 +405,7 @@ button {
     width: 100%;
     margin-top: min(3.5vw, 1.5vh);
     color: #fff;
-    font-size: min(1.9vw, 1.1vh);
+    font-size: min(2.5vw, 1.1vh);
     line-height: min(4.5vw, 2.5vh);
     text-align: justify;
     letter-spacing: 0.07rem;
@@ -437,7 +437,10 @@ button {
   }
   .buttons > button:hover {
     background-color: #ffcc00;
+  }
+  .buttons > button:hover a {
     color: #000;
+    text-decoration: none;
   }
 
   .imageContainer {
@@ -1230,7 +1233,7 @@ button {
   }
   .buttons > button {
     width: 39%;
-    height: max(1.9vw, 4.5vh);
+    height: max(2.9vw, 5.5vh);
     border: 2px solid #ffcc00;
     border-radius: 1.9rem;
     background-color: transparent;
@@ -1275,9 +1278,9 @@ button {
   .imageContainer .portrait {
     position: absolute;
     z-index: 1;
-    top: min(-0.8vw, -4%);
-    left: max(2vw, 5%);
-    width: max(26vh, 84.9%);
+    top: min(-1.8vw, -5%);
+    left: max(3vw, 8%);
+    width: max(61vh, 77.9%);
     max-width: 84.9%;
   }
 
@@ -1469,10 +1472,10 @@ button {
   }
   .textContent p {
     width: 95%;
-    margin-top: 3vh;
+    margin-top: min(6.1vw, 3vh);
     color: #000;
-    font-size: 1vh;
-    line-height: 2.5vh;
+    font-size: min(2.5vw, 1.1vh);
+    line-height: min(4.5vw, 2.5vh);
     letter-spacing: 0.15rem;
     text-transform: uppercase;
   }
@@ -1563,6 +1566,8 @@ button {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    height: 3.6rem;
+    width: 3.6rem;
   }
   .hobbiesContainer div img {
     padding-bottom: min(11%, 0.9vw);
@@ -2380,8 +2385,8 @@ button {
     width: 73%;
     margin-top: min(0.5vw, 3%);
     color: #fff;
-    font-size: min(1rem, 1vw);
-    line-height: min(2.1rem, 1.75vw);
+    font-size: min(2.5vw, 1.1vh);
+    line-height: min(4.5vw, 2.5vh);
     text-align: justify;
     letter-spacing: 0.11rem;
     text-transform: uppercase;
@@ -2584,6 +2589,18 @@ button {
     align-items: center;
     width: 100%;
     height: 76%;
+  }
+
+  .carouselContainer::after {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
   }
 
   .arrowContainer {
@@ -2815,6 +2832,121 @@ button {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .section {
+    width: 100%;
+    max-width: 1366px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000;
+    font-family: HelveticaNeueLTRoman, sans-serif;
+  }
+
+  .contentContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 86%;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+  }
+
+  .textContainerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 6%;
+  }
+  .textContainerContent .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .textContainerContent .text span {
+    display: inline-block;
+    font-family: HelveticaNeueLTBold, sans-serif;
+    font-size: 14vw;
+    line-height: 13vw;
+    letter-spacing: 0.1rem;
+  }
+  .textContainerContent .text span:first-child {
+    position: relative;
+    padding-bottom: 3vh;
+    font-size: 1.1vh;
+    line-height: 1;
+    letter-spacing: 0.05rem;
+  }
+  .textContainerContent .text span:nth-child(2) {
+    color: #ffcc00;
+  }
+  .textContainerContent p {
+    margin-top: min(0.5vw, 3%);
+    color: #fff;
+    font-size: min(0.76rem, 0.65vw);
+    line-height: min(1.9rem, 1.55vw);
+    text-align: justify;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+  }
+
+  .abstract {
+    display: none;
+  }
+
+  .nav {
+    position: relative;
+    z-index: 3;
+    width: 56%;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  .nav picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.1vw;
+    margin-bottom: 3vh;
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navLink {
+    color: #000;
+    font-family: HelveticaNeueLTBold, sans-serif;
+    font-size: 0.7rem;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  .navLink:hover {
+    color: #ffcc00;
+    font-weight: 700;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 3vh;
+  }
 }
 @media only screen and (min-device-width: 360px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3) {
   .section {

@@ -170,8 +170,7 @@
 
     button {
       width: 51%;
-      height: 18%;;
-      //height: unquote('min(4.1vw, 5.3vh)');
+      height: unquote('max(2.9vw, 5.5vh)');
       border: 2px solid $primary-color;
       border-radius: 1.9rem;
       margin-top: 3vh;
@@ -182,7 +181,8 @@
       text-transform: uppercase;
 
       &:hover {
-        background: #000;
+        background: $primary-color;
+        color: #000;
         cursor: pointer;
       }
     }

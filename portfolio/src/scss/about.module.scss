@@ -86,11 +86,10 @@
 
     p {
       width: 95%;
-      margin-top: 3vh;
+      margin-top: unquote('min(6.1vw, 3vh)');
       color: #000;
-      font-size: 1vh;
-      //line-height: unquote('min(1.9rem, 1.55vw)');
-      line-height: 2.5vh;
+      font-size: unquote('min(2.5vw, 1.1vh)');
+      line-height: unquote('min(4.5vw, 2.5vh)');
       letter-spacing: 0.15rem;
       text-transform: uppercase;
 
@@ -186,6 +185,8 @@
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
+      height: 3.6rem;
+      width: 3.6rem;
 
       img {
         padding-bottom: unquote('min(11%, 0.9vw)');

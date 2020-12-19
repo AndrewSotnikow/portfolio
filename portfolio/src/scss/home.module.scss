@@ -363,7 +363,7 @@
       width: 100%;
       margin-top: unquote('min(3.5vw, 1.5vh)');
       color: #fff;
-      font-size: unquote('min(1.9vw, 1.1vh)');
+      font-size: unquote('min(2.5vw, 1.1vh)');
       line-height: unquote('min(4.5vw, 2.5vh)');
       text-align: justify;
       letter-spacing: 0.07rem;
@@ -397,7 +397,11 @@
 
       &:hover {
         background-color: $primary-color;
-        color: #000;
+
+        a {
+          color: #000;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -702,6 +706,7 @@
         background-color: $primary-color;
         color: #000;
       }
+
       &:hover {
         background-color: $primary-color;
 
@@ -1006,6 +1011,7 @@
         background-color: $primary-color;
         color: #000;
       }
+
       &:hover {
         background-color: $primary-color;
 
@@ -1294,7 +1300,7 @@
 
     & > button {
       width: 39%;
-      height: unquote('max(1.9vw, 4.5vh)');
+      height: unquote('max(2.9vw, 5.5vh)');
       border: 2px solid $primary-color;
       border-radius: 1.9rem;
       background-color: transparent;
@@ -1310,7 +1316,8 @@
 
       &:hover {
         background-color: $primary-color;
-        a{
+
+        a {
           color: #000;
           text-decoration: none;
         }
@@ -1348,10 +1355,10 @@
     .portrait {
       position: absolute;
       z-index: 1;
-      top: unquote('min(-0.8vw, -4%)');
-      left: unquote('max(2vw, 5%)');
+      top: unquote('min(-1.8vw, -5%)');
+      left: unquote('max(3vw, 8%)');
       //width: unquote('max(26vw, 84.9%)');
-      width: unquote('max(26vh, 84.9%)');
+      width: unquote('max(61vh, 77.9%)');
       max-width: 84.9%;
     }
   }
