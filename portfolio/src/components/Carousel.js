@@ -22,7 +22,12 @@ class Carousel extends Component {
             x: 0,
             touchStartLocation: {
                 x: null,
-            }
+            },
+            description: [
+                "Projekt ukończenia szkoły Coders Lab. Strona fundacji charytatywnej.",
+                "Servis dla planowania siatki zdjęć na instagramie.",
+                "Portfolio dla projektanta graficznego.",
+            ],
         };
     }
 
@@ -76,14 +81,13 @@ class Carousel extends Component {
             x: this.state.x + -1 * differences.x * 0.05, //.05 to reduce the distance of the touch.  purely for demonstration ease
         };
         location.x > this.state.touchStartLocation.x ? this.prevSlide() : this.nextSlide();
-        console.log(location);
-        console.log();
     }
 
     render() {
 
         const images = this.state.images;
         let index = this.state.currentImageIndex;
+        let description= this.state.description[index];
 
         return (
             <div className={styles.carouselContainer}>
@@ -109,7 +113,9 @@ class Carousel extends Component {
                             <img key={index.index} src={image.image} alt=""/>
                         )}
                     </div>
+
                 </div>
+                <div className={styles.description}><p>{description}</p></div>
 
             </div>
         );

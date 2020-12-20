@@ -64,58 +64,71 @@
 
 @media only screen and (min-device-width: 1025px) {
 
-  .section {
-    width: 100%;
-    max-width: 1920px;
-    height: 2000px;
-    margin: 0 auto;
-    background-color: $background-white;
-    color: #000;
-    font-family: $font-regular;
-  }
 
-  .carouselContainer {
+  .carousel {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    width: 800px;
-    height: 800px;
-    margin: 0 auto;
+    width: 52%;
+    height: 100%;
   }
-
-
+  // carousel component styles
+  .carouselContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 76%;
+  }
+  .arrowContainer {
+    position: absolute;
+    z-index: 2;
+    top: 33%;
+    right: 6%;
+    display: none;
+  }
   .arrowPrev {
-    width: 50px;
-    height: 50px;
+    width: 2vw;
+    height: 2vw;
+
+    &:hover {
+      stroke: #000;
+    }
   }
 
   .arrowNext {
-    width: 50px;
-    height: 50px;
-  }
+    width: 2vw;
+    height: 2vw;
 
-  .container {
+    &:hover {
+      stroke: #fff;
+    }
+  }
+  .imgContainer {
     position: relative;
     overflow: hidden;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
   }
 
   .wrapper {
     position: absolute;
     display: flex;
     overflow: hidden;
-    margin: 0 auto;
     transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
     img {
       flex: 1;
-      width: 300px;
-      height: 300px;
-      margin-left: 30px;
+      width: unquote('min(34.2vw, 40.8rem)');
+      margin: 0 0.8vw;
     }
+  }
+  .description{
+    width: 100%;
+    height: 100%;
+    background-color: green;
   }
 }
 

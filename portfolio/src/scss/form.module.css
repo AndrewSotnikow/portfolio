@@ -90,13 +90,15 @@ form textarea.populated::placeholder {
     border-bottom: 1px solid #000;
     margin-bottom: 6%;
     padding: 6%;
-    font: 1rem HelveticaNeueLTRoman, sans-serif;
+    font-family: HelveticaNeueLTRoman, sans-serif;
+    font-size: min(1rem, 1vw);
     transition: all 0.2s ease-in-out;
     outline: none;
   }
   form input::placeholder, form textarea::placeholder {
     color: #999;
-    font: 1.5vh HelveticaNeueLTRoman, sans-serif;
+    font-family: HelveticaNeueLTRoman, sans-serif;
+    font-size: min(2.5vw, 1.4vh);
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
   }
@@ -147,7 +149,8 @@ form textarea.populated::placeholder {
   }
   form input::placeholder, form textarea::placeholder {
     color: #999;
-    font: 1.5vh HelveticaNeueLTRoman, sans-serif;
+    font-family: HelveticaNeueLTRoman, sans-serif;
+    font-size: min(1rem, 1vw);
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
   }
@@ -163,7 +166,8 @@ form textarea.populated::placeholder {
   }
   form button {
     width: 51%;
-    height: max(2.9vw, 5.5vh);
+    height: max(2.4vw, 22%);
+    max-height: 218px;
     border: 2px solid #ffcc00;
     border-radius: 1.9rem;
     margin-top: 3vh;

@@ -81,13 +81,15 @@
       border-bottom: 1px solid #000;
       margin-bottom: 6%;
       padding: 6%;
-      font: 1rem $font-regular;
+      font-family: $font-regular;
+      font-size: unquote('min(1rem, 1vw)');
       transition: all 0.2s ease-in-out;
       outline: none;
 
       &::placeholder {
         color: #999;
-        font: 1.5vh $font-regular;
+        font-family: $font-regular;
+        font-size: unquote('min(2.5vw, 1.4vh)');
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
       }
@@ -148,7 +150,8 @@
 
       &::placeholder {
         color: #999;
-        font: 1.5vh $font-regular;
+        font-family: $font-regular;
+        font-size: unquote('min(1rem, 1vw)');
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
       }
@@ -170,7 +173,8 @@
 
     button {
       width: 51%;
-      height: unquote('max(2.9vw, 5.5vh)');
+      height: unquote('max(2.4vw, 22%)');
+      max-height: 218px;
       border: 2px solid $primary-color;
       border-radius: 1.9rem;
       margin-top: 3vh;

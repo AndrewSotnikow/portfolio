@@ -30,7 +30,7 @@
     justify-content: flex-end;
     align-items: center;
     width: 95%;
-    height: 80%;
+    height: 40%;
   }
 
 
@@ -73,7 +73,7 @@
       width: 100%;
       margin-top: 3vh;
       color: #fff;
-      font-size: 1vh;
+      font-size: unquote('min(2.5vw, 1.4vh)');
       line-height: 2.5vh;
       letter-spacing: 0.16rem;
       text-transform: uppercase;
@@ -119,14 +119,16 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: 60%;
   }
   // carousel component styles
   .carouselContainer {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     width: 100%;
-    height: 76%;
+    height: 70%;
   }
 
   .arrowContainer {
@@ -156,7 +158,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
 
   .wrapper {
@@ -165,12 +167,32 @@
     overflow: hidden;
     margin-left: 6%;
     transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
     img {
       flex: 1;
       overflow: hidden;
       width: 31vh;
       height: 31vh;
       margin-right: 10vw;
+    }
+  }
+  .description {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: unquote('min(35vh, 76vw)');
+    height: 10%;
+    padding-left: 6.6%;
+    font-family: $font-thin;
+    font-weight: lighter;
+
+    p {
+      color: #fff;
+      font-family: $font-thin;
+      font-size: 1vh;
+      line-height: 2.5vh;
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
     }
   }
 
@@ -183,7 +205,6 @@
     max-width: 1366px;
     height: 50vh;
     margin: 0 auto;
-    //height: unquote('min(100vh, 1080px)');
     background-color: $background-black;
     color: #fff;
     font-family: $font-regular;
@@ -247,8 +268,8 @@
       width: 73%;
       margin-top: unquote('min(0.5vw, 3%)');
       color: #fff;
-      font-size: unquote('min(2.5vw, 1.1vh)');
-      line-height: unquote('min(4.5vw, 2.5vh)');
+      font-size: unquote('min(1rem, 1vw)');
+      line-height: unquote('min(2.1rem, 1.75vw)');
       text-align: justify;
       letter-spacing: 0.11rem;
       text-transform: uppercase;
@@ -296,9 +317,10 @@
   }
   // carousel component styles
   .carouselContainer {
-    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     width: 100%;
     height: 76%;
   }
@@ -330,7 +352,8 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 84%;
+
   }
 
   .wrapper {
@@ -345,7 +368,25 @@
       margin: 0 0.8vw;
     }
   }
+  .description {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 68%;
+    height: 7%;
+    padding: 3% 0 3% 1.6%;
+    font-family: $font-thin;
+    font-weight: lighter;
 
+    p {
+      color: #fff;
+      font-family: $font-thin;
+      font-size: unquote('min(1rem, 1vw)');
+      line-height: unquote('min(2.1rem, 1.75vw)');
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-height: 1366px) and (orientation: landscape) {
@@ -465,22 +506,12 @@
   }
   // carousel component styles
   .carouselContainer {
-    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     width: 100%;
     height: 76%;
-  }
-  .carouselContainer::after {
-    position: absolute;
-    top: 0;
-    left: 70%;
-    display: flex;
-    justify-content: end;
-    width: 30%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    content: "";
   }
 
   .arrowContainer {
@@ -511,7 +542,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 73%;
   }
 
   .wrapper {
@@ -526,10 +557,30 @@
       margin: 0 0.8vw;
     }
   }
+  .description {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 68%;
+    height: 7%;
+    padding: 3% 0 3% 1.7%;
+    font-family: $font-thin;
+    font-weight: lighter;
+
+    p {
+      color: #fff;
+      font-family: $font-thin;
+      font-size: unquote('min(1rem, 1vw)');
+      font-weight: lighter;
+      line-height: unquote('min(2.1rem, 1.75vw)');
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
+    }
+  }
 
 }
 
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .section {
     width: 100%;
     max-width: 1920px;
@@ -546,7 +597,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 82.5%;
+    height: 95%;
   }
 
   .textContainer {
@@ -555,13 +606,14 @@
     justify-content: center;
     align-items: start;
     width: 48%;
-    height: 100%;
+    height: 90%;
   }
 
 
   .textContainerContent {
     display: flex;
     flex-direction: column;
+    height: 52%;
     padding-top: unquote('min(3.5vw, 7.5%)');
     padding-left: unquote('min(7.4vw, 15.5%)');
 
@@ -646,9 +698,11 @@
   // carousel component styles
   .carouselContainer {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     width: 100%;
-    height: 76%;
+    height: 88%;
   }
 
   .carouselContainer::after {
@@ -666,7 +720,7 @@
   .arrowContainer {
     position: absolute;
     z-index: 2;
-    top: unquote('min(21vw, 46%)');
+    top: unquote('min(21vw, 50%)');
     right: 5%;
     display: block;
   }
@@ -689,9 +743,11 @@
   }
   .imgContainer {
     position: relative;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 56%;
   }
 
   .wrapper {
@@ -706,6 +762,231 @@
       margin: 0 0.8vw;
     }
   }
+  .description {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 68%;
+    height: 7%;
+    padding: 3% 0 3% 2%;
+    font-family: $font-thin;
+    font-weight: lighter;
 
+    p {
+      color: #fff;
+      font-family: $font-thin;
+      font-size: unquote('min(0.76rem, 0.65vw)');
+      font-weight: lighter;
+      line-height: unquote('min(1.9rem, 1.55vw)');
+      //text-align: justify;
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
+    }
+  }
+
+}
+@media only screen and (min-device-width: 1025px) {
+  .section {
+    width: 100%;
+    max-width: 1920px;
+    height: unquote('min(100vh, 1080px)');
+    margin: 0 auto;
+    background-color: $background-black;
+    color: #fff;
+    font-family: $font-regular;
+  }
+  //left container with text and GitHub link
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: unquote('min(69.3vw, 95%)');
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 48%;
+    height: 90%;
+  }
+
+
+  .textContainerContent {
+    display: flex;
+    flex-direction: column;
+    height: 52%;
+    padding-top: unquote('min(3.5vw, 7.5%)');
+    padding-left: unquote('min(7.4vw, 15.5%)');
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      span {
+        top: 3%;
+        display: inline-block;
+        color: $decoration-color;
+        font-family: $font-bold;
+        font-size: unquote('min(5.07rem, 4.23vw)');
+        line-height: unquote('min(6rem, 5vw)');
+        letter-spacing: 0.16rem;
+
+        &:first-child {
+          position: relative;
+          padding-bottom: 2%;
+          font-size: unquote('min(0.9rem, 0.8vw)');
+          line-height: 1;
+          letter-spacing: 0.05rem;
+        }
+
+        &:nth-child(2) {
+          color: $primary-color;
+        }
+      }
+    }
+
+    p {
+      margin-top: unquote('min(0.5vw, 3%)');
+      color: #fff;
+      font-size: unquote('min(0.76rem, 0.65vw)');
+      line-height: unquote('min(1.9rem, 1.55vw)');
+      text-align: justify;
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .gitLink {
+    display: flex;
+    align-items: center;
+    margin-top: unquote('min(0.5vw, 3%)');
+
+    div {
+      padding-right: 20px;
+    }
+
+    span {
+      border-bottom: 1px solid #ffcc00;
+      padding-bottom: 3px;
+      color: #ffcc00;
+      font-family: $font-regular;
+      text-decoration: none;
+
+      a {
+        border-bottom: 1px solid #ffcc00;
+        padding-bottom: 3px;
+        color: #ffcc00;
+        font-family: $font-regular;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // Carousel
+
+  .carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 52%;
+    height: 100%;
+  }
+  // carousel component styles
+  .carouselContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 88%;
+  }
+
+  .carouselContainer::after {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+  }
+
+  .arrowContainer {
+    position: absolute;
+    z-index: 2;
+    top: unquote('min(48vh, 50%)');
+    right: 5%;
+    display: block;
+  }
+  .arrowPrev {
+    width: 2vw;
+    height: 2vw;
+
+    &:hover {
+      stroke: #000;
+    }
+  }
+
+  .arrowNext {
+    width: 2vw;
+    height: 2vw;
+
+    &:hover {
+      stroke: #fff;
+    }
+  }
+  .imgContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    //height: 73%;
+  }
+
+  .wrapper {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    img {
+      flex: 1;
+      width: unquote('min(34.2vw, 40.8rem)');
+      margin: 0 0.8vw;
+    }
+  }
+  .description {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 68%;
+    height: 7%;
+    padding: 3% 0 3% 2%;
+    font-family: $font-thin;
+    font-weight: lighter;
+
+    p {
+      color: #fff;
+      font-family: $font-thin;
+      font-size: unquote('min(0.76rem, 0.65vw)');
+      font-weight: lighter;
+      line-height: unquote('min(1.9rem, 1.55vw)');
+      //text-align: justify;
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
+    }
+  }
 
 }

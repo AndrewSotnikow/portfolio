@@ -1,7 +1,6 @@
 @import "fonts";
 @import "colors";
 
-
 @media only screen and (min-width: 360px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3) {
 
   .section {
@@ -60,8 +59,8 @@
     width: 23.3%;
   }
 
-
   //Burger menu start
+
   .menuToggle {
     position: relative;
     z-index: 1;
@@ -146,6 +145,7 @@
   //Burger menu end
 
 
+
   //text&buttons& images on the page
   .contentContainer {
     display: flex;
@@ -216,87 +216,7 @@
 
 
   //Burger menu start
-  .menuToggle {
-    position: relative;
-    z-index: 1;
-    top: unquote('min(4vw, 4vh)');
-    right: unquote('min(5vw, 3vh)');
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    -webkit-user-select: none;
-    user-select: none;
-  }
 
-  .menuToggle input {
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    width: unquote('min(7vw, 5vh)');
-    height: unquote('min(6vw, 4vh)');
-    opacity: 0;
-    cursor: pointer;
-  }
-
-  .menuToggle span {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    width: unquote('min(7vw, 4vh)');
-    height: unquote('min(0.8vw, 0.5vh)');
-    border-radius: 2px;
-    margin-bottom: unquote('min(1.3vw, 0.8vh)');
-    background: $primary-color;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    opacity 0.55s ease;
-    transform-origin: 5px 0px;
-  }
-
-  .menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-
-  .menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-
-  .menuToggle input:checked ~ span {
-    background: #36383F;
-    opacity: 1;
-    transform: rotate(45deg) translate(-3px, -1px);
-  }
-  .menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  .menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-
-  .menu {
-    position: absolute;
-
-    width: 34vw;
-    height: 35vh;
-    border-radius: 0 0 0 25px;
-    margin: -6vh 0 0 13vw;
-    padding: 18vh 5vh 13vh 7vh;
-    background-color: $primary-color;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-    transform: translate(0%, 0);
-    transform-origin: 0% 0%;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .menu li {
-    transition-delay: 2s;
-  }
-
-  .menuToggle input:checked ~ ul {
-    transform: translate(-100%, 0);
-  }
   //Burger menu end
 
 
@@ -363,7 +283,7 @@
       width: 100%;
       margin-top: unquote('min(3.5vw, 1.5vh)');
       color: #fff;
-      font-size: unquote('min(2.5vw, 1.1vh)');
+      font-size: unquote('min(2.5vw, 1.4vh)');
       line-height: unquote('min(4.5vw, 2.5vh)');
       text-align: justify;
       letter-spacing: 0.07rem;
@@ -1300,7 +1220,8 @@
 
     & > button {
       width: 39%;
-      height: unquote('max(2.9vw, 5.5vh)');
+      height: unquote('max(2.4vw, 220%)');
+      max-height: 218px;
       border: 2px solid $primary-color;
       border-radius: 1.9rem;
       background-color: transparent;
@@ -1356,8 +1277,7 @@
       position: absolute;
       z-index: 1;
       top: unquote('min(-1.8vw, -5%)');
-      left: unquote('max(3vw, 8%)');
-      //width: unquote('max(26vw, 84.9%)');
+      left: unquote('max(1.5vw, 5%)');
       width: unquote('max(61vh, 77.9%)');
       max-width: 84.9%;
     }
