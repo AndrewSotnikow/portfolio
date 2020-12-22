@@ -42,7 +42,7 @@ class Home extends Component {
                                     projektów.</p>
                             </div>
                             <div className={styles.buttons}>
-                                <button className={styles.getCv}><a download href="../assets/Andrzej%20Sotnikov%20Junior%20Frond-End%20CV.pdf">pobierz cv</a></button>
+                                <button className={styles.getCv}><a download href="https://drive.google.com/file/d/1bqWQfTSE61wskBaDSoi66OOXjJGvlfDa/view?usp=sharing">pobierz cv</a></button>
 
                                 <button className={styles.github}><a href="https://github.com/AndrewSotnikow?tab=repositories" target="_blank" rel="noopener noreferrer">moje prace</a>
                                 </button>
