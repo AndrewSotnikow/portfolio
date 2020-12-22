@@ -32,23 +32,23 @@ class Contact extends Component {
                 </div>
 
                 <nav className={styles.nav}>
-                    <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                        <picture>
-                            <source
-                                media="(min-width: 1024px)"
-                                sizes="(max-width: 48px) 70vw, 48px"
-                                srcSet={`${linkedIn} 48w`}/>
-                            <source
-                                media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(max-width: 38px) 60vw, 38px"
-                                srcSet={`${linkedInSmall} 38w`}/>
+
+                    <picture>
+                        <source
+                            media="(min-width: 1024px)"
+                            sizes="(max-width: 48px) 70vw, 48px"
+                            srcSet={`${linkedIn} 48w`}/>
+                        <source
+                            media="(min-width: 768px) and (max-width: 1199px)"
+                            sizes="(max-width: 38px) 60vw, 38px"
+                            srcSet={`${linkedInSmall} 38w`}/>
+                        <a href={linkedin} target="_blank" rel="noopener noreferrer">
                             <img
                                 sizes="(max-width: 120px) 40vw, 38px"
                                 srcSet={`${linkedInSmall} 38w`}
                                 alt="LinkedIn Icon"/>
-
-                        </picture>
-                    </a>
+                        </a>
+                    </picture>
                     <ul>
                         <li><HashLink smooth className={styles.navLink} to="#home">Home</HashLink></li>
                         <li><HashLink smooth className={styles.navLink} to="#portfolio">portfolio</HashLink></li>

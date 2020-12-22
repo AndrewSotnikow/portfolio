@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import one from "../img/project1.jpg";
 import two from "../img/project2.jpg";
-import three from "../img/3.png";
 import styles from "../scss/portfolio.module.scss";
 
 class Carousel extends Component {
@@ -17,7 +16,6 @@ class Carousel extends Component {
             images: [
                 {image: one, index: 0},
                 {image: two, index: 1},
-                {image: three, index: 2},
             ],
             x: 0,
             touchStartLocation: {
@@ -26,7 +24,6 @@ class Carousel extends Component {
             description: [
                 "Projekt ukończenia szkoły Coders Lab. Strona fundacji charytatywnej.",
                 "Servis dla planowania siatki zdjęć na instagramie.",
-                "Portfolio dla projektanta graficznego.",
             ],
         };
     }
@@ -46,7 +43,7 @@ class Carousel extends Component {
     nextSlide() {
         let counter = this.state.currentImageIndex;
         let newIndex = counter + 1;
-        if (counter === 2) {
+        if (counter === 1) {
             this.setState({
                 currentImageIndex: 0,
             })
@@ -111,9 +108,9 @@ class Carousel extends Component {
                          style={{"transform": `translateX(-${index * (100 / images.length)}%)`}}>
                         {images.map((image, index) =>
                             <img key={index.index} src={image.image} alt=""/>
+
                         )}
                     </div>
-
                 </div>
                 <div className={styles.description}><p>{description}</p></div>
 

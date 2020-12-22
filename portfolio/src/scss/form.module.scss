@@ -24,7 +24,73 @@
 
       &::placeholder {
         color: #999;
-        font: 0.8rem Helvetica, Arial, sans-serif;
+        font-family: $font-regular;
+        font-size: unquote('min(2.5vw, 1.4vh)');
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:focus,
+      &.populated {
+        padding-top: 28px;
+        padding-bottom: 12px;
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+
+    textarea {
+      height: 40%;
+    }
+
+    button {
+      width: 73%;
+      height: unquote('min(11vw, 6vh)');
+
+      //height: 3.9vh;
+      border: 2px solid $primary-color;
+      border-radius: 1.9rem;
+      margin-top: 2vh;
+      background-color: transparent;
+      color: $primary-color;
+      font-family: $font-bold;
+      font-size: unquote('min(3.2vw, 1.8vh)');
+      text-transform: uppercase;
+
+      &:hover {
+        background: #000;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3) {
+
+  form {
+    display: table;
+    width: 100%;
+    margin-top: 1vh;
+
+    input,
+    textarea {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #000;
+      margin-bottom: 6%;
+      padding: 6%;
+      font: 1rem $font-regular;
+      transition: all 0.2s ease-in-out;
+      outline: none;
+
+      &::placeholder {
+        color: #999;
+        font-family: $font-regular;
+        font-size: unquote('min(2.5vw, 1.4vh)');
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
       }

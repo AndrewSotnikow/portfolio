@@ -1,7 +1,7 @@
 @import "fonts";
 @import "colors";
 
-@media only screen and (min-width: 360px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-width: 360px) and (max-width: 767px) and (orientation: portrait) {
   .section {
     width: 100%;
     max-width: 1366px;
@@ -160,7 +160,6 @@
     flex-direction: column;
     justify-content: space-between;
     width: 88%;
-    height: 10vw;
     margin: 0 auto;
 
     span:first-child {
@@ -210,7 +209,558 @@
 
 
 }
+@media only screen and (min-width: 360px) and (max-width: 767px) and (orientation: landscape) {
+  .section {
+    width: 100%;
+    max-width: 1366px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: $background-white;
+    color: #000;
+    font-family: $font-regular;
+  }
+  .nav {
+    width: 21.5rem;
+    margin: 0 auto;
+    padding-top: 3.5rem;
 
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .link {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    margin-top: -0.8125rem;
+    margin-left: 4.4rem;
+
+  }
+  //left container with text and LinkedIn link
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 57%;
+    height: 100%;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 71%;
+    padding-left: 6%;
+
+    span {
+      top: unquote('min(1vh, 0.9vw)');
+      display: inline-block;
+      font-family: $font-bold;
+      font-size: unquote('min(7.9vh, 14vw)');
+      line-height: unquote('min(9.5vh, 17vw)');
+      text-align: justify;
+      letter-spacing: 0.2rem;
+
+      &:first-child {
+        position: relative;
+        padding-bottom: 3vh;
+        font-size: 1.1vh;
+        line-height: 1;
+        letter-spacing: 0.05rem;
+      }
+
+      &:nth-child(2) {
+        color: $primary-color;
+      }
+    }
+
+
+    p {
+      width: 95%;
+      margin-top: unquote('min(6.1vw, 3vh)');
+      color: #000;
+      font-size: 0.4rem;
+      line-height: 0.8rem;
+      text-align: justify;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+
+      a {
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 3px;
+        color: $primary-color;
+        font-family: $font-bold;
+        text-decoration: none;
+      }
+    }
+  }
+  //Right container with images and animation
+  .decorationContainer {
+    position: relative;
+    display: none;
+    width: 50%;
+    height: unquote('min(46vw, 100%)');
+    max-height: 1080px;
+  }
+
+
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    margin: 0 auto;
+
+    span:first-child {
+      position: relative;
+      bottom: 8%;
+      padding-bottom: 3vh;
+      font-family: $font-bold;
+      font-size: 1.1vh;
+      line-height: 1;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .hobbiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: 3.6rem;
+      height: 3.6rem;
+      picture{
+        width: 50%;
+
+      }
+      img {
+        padding-bottom: unquote('min(11%, 0.9vw)');
+        width: 100%;
+      }
+    }
+
+    span {
+      font-family: $font-bold;
+      font-size: 1vw;
+      letter-spacing: 0.07rem;
+      text-transform: uppercase;
+
+      &:nth-child(3) {
+        padding-top: unquote('min(11%, 0.9vw)');
+        padding-bottom: unquote('min(3%, 0.2vw)');
+      }
+
+    }
+  }
+
+
+}
+@media only screen and (min-width: 360px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .section {
+    width: 100%;
+    max-width: 1366px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: $background-white;
+    color: #000;
+    font-family: $font-regular;
+  }
+  .nav {
+    width: 21.5rem;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .link {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    margin-top: -0.8125rem;
+    margin-left: 4.4rem;
+
+  }
+  //left container with text and LinkedIn link
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 83%;
+
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 71%;
+    padding-left: 6%;
+
+    span {
+      display: inline-block;
+      font-family: $font-bold;
+      font-size: 14vw;
+      line-height: 13vw;
+      letter-spacing: 0.1rem;
+
+      &:first-child {
+        position: relative;
+        padding-bottom: 3vh;
+        font-size: 1.1vh;
+        line-height: 1;
+        letter-spacing: 0.05rem;
+      }
+
+      &:nth-child(2) {
+        color: $primary-color;
+      }
+    }
+
+
+    p {
+      width: 95%;
+      margin-top: unquote('min(6.1vw, 3vh)');
+      color: #000;
+      font-size: unquote('min(2.5vw, 1.4vh)');
+      line-height: unquote('min(4.5vw, 2.5vh)');
+      text-align: justify;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+
+      a {
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 3px;
+        color: $primary-color;
+        font-family: $font-bold;
+        text-decoration: none;
+      }
+    }
+  }
+  //Right container with images and animation
+  .decorationContainer {
+    position: relative;
+    display: none;
+    width: 50%;
+    height: unquote('min(46vw, 100%)');
+    max-height: 1080px;
+  }
+
+  .decoration {
+    position: absolute;
+    z-index: 4;
+    font-size: unquote('min(0.9rem, 0.8vw)');
+    line-height: 1;
+    letter-spacing: 0.05rem;
+    transform: rotate(-90deg);
+
+    &.positionHtml {
+      top: unquote('min(9vw, 19%)');
+      left: unquote('min(4.3vw, 8.5%)');
+      animation: slidein 5s linear 0.7s infinite alternate;
+    }
+
+    &.positionReact {
+      bottom: unquote('min(5.6vw, 12.2%)');
+      left: unquote('min(11.3vw, 22.8%)');
+      animation: slidein 5s linear 1s infinite alternate;
+    }
+
+    &.positionScript {
+      right: unquote('min(15.8vw, 31.5%)');
+      bottom: unquote('min(5.6vw, 12.2%)');
+      animation: slidein 5s linear 2.3s infinite alternate;
+    }
+
+    &.positionWebpack {
+      top: unquote('min(10vw, 21.5%)');
+      right: unquote('min(9vw, 18%)');
+      animation: slidein 5s linear 0.3s infinite alternate;
+    }
+  }
+  @keyframes slidein {
+    0% {
+      transform: rotate(-90deg) translateX(0px);
+    }
+    50% {
+      transform: rotate(-90deg) translateX(-25px);
+    }
+    100% {
+      transform: rotate(-90deg) translateX(25px);
+    }
+  }
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 88%;
+    margin: 0 auto;
+
+    span:first-child {
+      position: relative;
+      bottom: 8%;
+      padding-bottom: 3vh;
+      font-family: $font-bold;
+      font-size: 1.1vh;
+      line-height: 1;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .hobbiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: 3.6rem;
+      height: 3.6rem;
+
+      img {
+        padding-bottom: unquote('min(11%, 0.9vw)');
+      }
+    }
+
+    span {
+      font-family: $font-bold;
+      font-size: 1.5vw;
+      letter-spacing: 0.07rem;
+      text-transform: uppercase;
+
+      &:nth-child(3) {
+        padding-top: unquote('min(11%, 0.9vw)');
+        padding-bottom: unquote('min(3%, 0.2vw)');
+      }
+
+    }
+  }
+
+
+}
+@media only screen and (min-width: 360px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .section {
+    width: 100%;
+    max-width: 1366px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: $background-white;
+    color: #000;
+    font-family: $font-regular;
+  }
+  .nav {
+    width: 21.5rem;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .link {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    margin-top: -0.8125rem;
+    margin-left: 4.4rem;
+
+  }
+  //left container with text and LinkedIn link
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 57%;
+    height: 100%;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 71%;
+    padding-left: 6%;
+
+    span {
+      top: unquote('min(1vh, 0.9vw)');
+      display: inline-block;
+      font-family: $font-bold;
+      font-size: unquote('min(7.9vh, 14vw)');
+      line-height: unquote('min(9.5vh, 17vw)');
+      text-align: justify;
+      letter-spacing: 0.2rem;
+
+      &:first-child {
+        position: relative;
+        padding-bottom: 3vh;
+        font-size: 1.1vh;
+        line-height: 1;
+        letter-spacing: 0.05rem;
+      }
+
+      &:nth-child(2) {
+        color: $primary-color;
+      }
+    }
+
+
+    p {
+      width: 95%;
+      margin-top: unquote('min(6.1vw, 3vh)');
+      color: #000;
+      font-size: 0.4rem;
+      line-height: 0.8rem;
+      text-align: justify;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+
+      a {
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 3px;
+        color: $primary-color;
+        font-family: $font-bold;
+        text-decoration: none;
+      }
+    }
+  }
+  //Right container with images and animation
+  .decorationContainer {
+    position: relative;
+    display: none;
+    width: 50%;
+    height: unquote('min(46vw, 100%)');
+    max-height: 1080px;
+  }
+
+
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    margin: 0 auto;
+
+    span:first-child {
+      position: relative;
+      bottom: 8%;
+      padding-bottom: 3vh;
+      font-family: $font-bold;
+      font-size: 1.1vh;
+      line-height: 1;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .hobbiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: 3.6rem;
+      height: 3.6rem;
+      picture{
+        width: 50%;
+
+      }
+      img {
+        padding-bottom: unquote('min(11%, 0.9vw)');
+        width: 100%;
+      }
+    }
+
+    span {
+      font-family: $font-bold;
+      font-size: 1vw;
+      letter-spacing: 0.07rem;
+      text-transform: uppercase;
+
+      &:nth-child(3) {
+        padding-top: unquote('min(11%, 0.9vw)');
+        padding-bottom: unquote('min(3%, 0.2vw)');
+      }
+
+    }
+  }
+
+
+}
 @media only screen and (min-width: 768px) and (max-height: 1366px) {
   .section {
     width: 100%;

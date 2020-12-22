@@ -36,13 +36,13 @@ class Home extends Component {
                                 <span>I’m Andrew,</span>
                                 <span>front-end developer.</span>
                                 <p>dynamicznie rozwijający się młody specjalista, którego celem jest dołaczenie do
-                                    zgrabnego
+                                    zgranego
                                     zespołu aby opanować nowe technologie i rozwijać umiętmości pod czas wspólnej
                                     realizacji
                                     projektów.</p>
                             </div>
                             <div className={styles.buttons}>
-                                <button className={styles.getCv}><a download href="../img/3.png">pobierz cv</a></button>
+                                <button className={styles.getCv}><a download href="../assets/Andrzej%20Sotnikov%20Junior%20Frond-End%20CV.pdf">pobierz cv</a></button>
 
                                 <button className={styles.github}><a href="https://github.com/AndrewSotnikow?tab=repositories" target="_blank" rel="noopener noreferrer">moje prace</a>
                                 </button>
