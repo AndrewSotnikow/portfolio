@@ -35,17 +35,27 @@ class Home extends Component {
                                 <span>Hello,</span>
                                 <span>I’m Andrew,</span>
                                 <span>front-end developer.</span>
-                                <p>dynamicznie rozwijający się młody specjalista, którego celem jest dołaczenie do
-                                    zgranego
-                                    zespołu aby opanować nowe technologie i rozwijać umiętmości pod czas wspólnej
-                                    realizacji
-                                    projektów.</p>
+                                <p>An up-and-coming young specialist whose goal is to join a well-knit team so as to
+                                    master new technologies and skills over the course of running joint projects.</p>
                             </div>
                             <div className={styles.buttons}>
-                                <button className={styles.getCv}><a download href="https://drive.google.com/file/d/1bqWQfTSE61wskBaDSoi66OOXjJGvlfDa/view?usp=sharing">pobierz cv</a></button>
+                                <a download
+                                   href="https://drive.google.com/file/d/1qEPsnoTv7QqLCwRgHHWFbalbnnCb0BA4/view?usp=sharing"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                >
+                                    <button className={styles.getCv}>
+                                        Download CV
+                                    </button>
+                                </a>
 
-                                <button className={styles.github}><a href="https://github.com/AndrewSotnikow?tab=repositories" target="_blank" rel="noopener noreferrer">moje prace</a>
-                                </button>
+                                <a
+                                    href="https://github.com/AndrewSotnikow?tab=repositories" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button className={styles.github}>My GitHub
+                                    </button>
+                                </a>
+
                             </div>
                         </div>
                     </div>

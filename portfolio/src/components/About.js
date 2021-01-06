@@ -21,14 +21,13 @@ class About extends Component {
                             <span>&#60;about&#62;</span>
                             <span>Skills,</span>
                             <span>education</span>
-                            <p>kurs w coders lab podczas którego poznałem następujące technologie: HTML, CSS,
-                                Javascript,
-                                React JS, sass, Webpack, RWD. skończyłem KURS UX w Szkołe Igora Dżazowa. Z łatwością
-                                pracuję
-                                w edytorach graficznych i znam podstawy projektowania i kompozycji. Za plecami mam
-                                wyższe
-                                wykształcenie z marketingu w Wyższej Szkołe Finansów i Zarządzania w Warszawie. Więcej
-                                na <a
+                            <p>I completed a course at Coders Lab, during which I learned the following technologies:
+                                HTML, CSS, Javascript, React JS, sass, Webpack, RWD. Additionally,
+                                I finished the UX course at Igor Dżazow’s School.
+                                I can easily navigate around graphic software and have a basic knowledge of graphic design, composition and coloristics.
+                                In the past, I graduated from the University of Finance and Management in Warsaw, where I gained higher education in marketing.
+                                You can find more about me on.
+                               <a
                                     href={linkedin} target="_blank" rel="noopener noreferrer">LINKEDIN</a></p>
                         </div>
                     </div>

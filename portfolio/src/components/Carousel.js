@@ -22,9 +22,13 @@ class Carousel extends Component {
                 x: null,
             },
             description: [
-                "Projekt ukończenia szkoły Coders Lab. Strona fundacji charytatywnej.",
-                "Servis dla planowania siatki zdjęć na instagramie.",
+                "Coderslab graduation project. charity web site",
+                "Coderslab graduation project. Service for planning instagram feed",
             ],
+            href: [
+                "https://charity.sot-dev.com/#/",
+                "https://feedplaner.sot-dev.com/#/",
+            ]
         };
     }
 
@@ -84,7 +88,8 @@ class Carousel extends Component {
 
         const images = this.state.images;
         let index = this.state.currentImageIndex;
-        let description= this.state.description[index];
+        let description = this.state.description[index];
+        let href = this.state.href[index];
 
         return (
             <div className={styles.carouselContainer}>
@@ -104,11 +109,10 @@ class Carousel extends Component {
                     <div className={styles.wrapper}
                          onTouchStart={this.handleTouchStart}
                          onTouchEnd={this.handleTouchEnd}
-
                          style={{"transform": `translateX(-${index * (100 / images.length)}%)`}}>
                         {images.map((image, index) =>
-                            <img key={index.index} src={image.image} alt=""/>
-
+                            <a href={href} target="_blank"
+                               rel="noopener noreferrer"><img key={index.index} src={image.image} alt=""/></a>
                         )}
                     </div>
                 </div>

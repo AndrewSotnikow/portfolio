@@ -372,7 +372,7 @@
       text-transform: uppercase;
 
       &:nth-child(3) {
-        padding-top: unquote('min(11%, 0.9vw)');
+        padding-top: unquote('min(9%, 0.8vw)');
         padding-bottom: unquote('min(3%, 0.2vw)');
       }
 
@@ -580,7 +580,7 @@
       text-transform: uppercase;
 
       &:nth-child(3) {
-        padding-top: unquote('min(11%, 0.9vw)');
+        padding-top: unquote('min(9%, 0.8vw)');
         padding-bottom: unquote('min(3%, 0.2vw)');
       }
 
@@ -752,7 +752,7 @@
       text-transform: uppercase;
 
       &:nth-child(3) {
-        padding-top: unquote('min(11%, 0.9vw)');
+        padding-top: unquote('min(9%, 0.8vw)');
         padding-bottom: unquote('min(3%, 0.2vw)');
       }
 
@@ -850,6 +850,7 @@
       font-size: unquote('min(1rem, 1vw)');
       line-height: unquote('min(2.1rem, 1.75vw)');
       text-align: justify;
+      text-align-last: left;
       letter-spacing: 0.11rem;
       text-transform: uppercase;
 
@@ -955,7 +956,7 @@
       text-transform: uppercase;
 
       &:nth-child(3) {
-        padding-top: unquote('min(11%, 0.9vw)');
+        padding-top: unquote('min(9%, 0.8vw)');
         padding-bottom: unquote('min(3%, 0.2vw)');
       }
 
@@ -1053,7 +1054,7 @@
       font-size: unquote('min(1rem, 1vw)');
       line-height: unquote('min(2.1rem, 1.75vw)');
       text-align: justify;
-      text-align-last: justify;
+      text-align-last: left;
       letter-spacing: 0.15rem;
       text-transform: uppercase;
 
@@ -1159,7 +1160,7 @@
       text-transform: uppercase;
 
       &:nth-child(3) {
-        padding-top: unquote('min(11%, 0.9vw)');
+        padding-top: unquote('min(9%, 0.8vw)');
         padding-bottom: unquote('min(3%, 0.2vw)');
       }
 
@@ -1258,6 +1259,7 @@
       font-size: unquote('min(0.76rem, 0.65vw)');
       line-height: unquote('min(1.9rem, 1.55vw)');
       text-align: justify;
+      text-align-last: left;
       letter-spacing: 0.15rem;
       text-transform: uppercase;
 
@@ -1363,7 +1365,7 @@
       text-transform: uppercase;
 
       &:nth-child(3) {
-        padding-top: unquote('min(11%, 0.9vw)');
+        padding-top: unquote('min(9%, 0.8vw)');
         padding-bottom: unquote('min(3%, 0.2vw)');
       }
 

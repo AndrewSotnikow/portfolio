@@ -15,7 +15,7 @@ class Portfolio extends Component {
                                 <span>&#60;portfolio&#62;</span>
                                 <span>Portfolio,</span>
                                 <span>my project's</span>
-                                <p>bardziej szczegółowo możesz hostować i przeglądać kod:</p>
+                                <p>YOU CAN HOST AND VIEW CODE IN MORE DETAIL:</p>
                             </div>
 
                             <div className={styles.gitLink}>

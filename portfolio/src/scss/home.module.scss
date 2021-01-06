@@ -225,6 +225,9 @@
     width: 100%;
     margin-top: unquote('min(11vw, 5vh)');
     margin-bottom: unquote('min(12vw, 7vh)');
+    & > a {
+      color: $primary-color;
+      text-decoration: none;
 
     & > button {
       width: unquote('min(40vw, 22.5vh)');
@@ -236,7 +239,7 @@
       font-family: $font-bold;
       font-size: unquote('min(1.8vh, 3.2vw)');
       text-transform: uppercase;
-
+    }
       & > a {
         color: $primary-color;
         text-decoration: none;
@@ -245,7 +248,7 @@
       &:hover {
         background-color: $primary-color;
 
-        a {
+        button {
           color: #000;
           text-decoration: none;
         }
@@ -619,6 +622,9 @@
     width: 32%;
     margin-top: unquote('min(11vw, 5vh)');
     margin-bottom: unquote('min(12vw, 7vh)');
+    & > a {
+      color: $primary-color;
+      text-decoration: none;
 
     & > button {
       width: unquote('min(40vw, 22.5vh)');
@@ -630,10 +636,6 @@
       font-family: $font-bold;
       font-size: unquote('min(1.8vh, 3.2vw)');
       text-transform: uppercase;
-
-      & > a {
-        color: $primary-color;
-        text-decoration: none;
       }
 
       &:hover {
@@ -1013,6 +1015,10 @@
     margin-top: unquote('min(11vw, 5vh)');
     margin-bottom: unquote('min(12vw, 7vh)');
 
+    & > a {
+      color: $primary-color;
+      text-decoration: none;
+
     & > button {
       width: unquote('min(40vw, 22.5vh)');
       height: unquote('min(11vw, 6vh)');
@@ -1023,16 +1029,11 @@
       font-family: $font-bold;
       font-size: unquote('min(1.8vh, 3.2vw)');
       text-transform: uppercase;
-
-      & > a {
-        color: $primary-color;
-        text-decoration: none;
-      }
-
+    }
       &:hover {
         background-color: $primary-color;
 
-        a {
+        button {
           color: #000;
           text-decoration: none;
         }
@@ -1407,6 +1408,11 @@
     margin-top: unquote('min(11vw, 5vh)');
     margin-bottom: unquote('min(12vw, 7vh)');
 
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      border-radius: 1.9rem;
+
     & > button {
       width: unquote('min(40vw, 22.5vh)');
       height: unquote('min(11vw, 6vh)');
@@ -1417,16 +1423,12 @@
       font-family: $font-bold;
       font-size: unquote('min(1.8vh, 3.2vw)');
       text-transform: uppercase;
-
-      & > a {
-        color: $primary-color;
-        text-decoration: none;
-      }
+    }
 
       &:hover {
         background-color: $primary-color;
 
-        a {
+        button {
           color: #000;
           text-decoration: none;
         }
@@ -1714,33 +1716,39 @@
     margin-top: unquote('min(1.7rem, 2.3vh)');
     padding-left: .31rem;
 
-    & > button {
-      width: 42%;
-      height: unquote('min(4.1vw, 5.3vh)');
-      border: 2px solid $primary-color;
-      border-radius: 1.9rem;
-      background-color: transparent;
+    & > a {
       color: $primary-color;
-      font-family: $font-bold;
-      font-size: unquote('min(1vh, 1.3vw)');
-      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 1.9rem;
 
-      & > a {
+      & > button {
+        width: unquote('max(12.2vw, 9vh)');
+        height: unquote('min(3.1vw, 4.3vh)');
+        border: 2px solid $primary-color;
+        border-radius: 1.9rem;
+        background-color: transparent;
         color: $primary-color;
-        text-decoration: none;
-      }
+        font-family: $font-bold;
+        font-size: unquote('max(0.7vh, 1vw)');
+        text-transform: uppercase;
 
-      &:hover {
-        background-color: $primary-color;
-        color: #000;
-      }
-
-      &:hover {
-        background-color: $primary-color;
-
-        a {
-          color: #000;
+        & > a {
+          color: $primary-color;
           text-decoration: none;
+        }
+
+        &:hover {
+          background-color: $primary-color;
+          color: #000;
+        }
+
+        &:hover {
+          background-color: $primary-color;
+
+          button {
+            color: #000;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -2020,9 +2028,13 @@
     margin-top: unquote('min(1.7rem, 2.3vh)');
     padding-left: .31rem;
 
+    & > a {
+      color: $primary-color;
+      text-decoration: none;
+
     & > button {
-      width: 42%;
-      height: unquote('min(4.1vw, 5.3vh)');
+      width: unquote('max(12.2vw, 2vh)');
+      height: unquote('min(3.2vw, 6vh)');
       border: 2px solid $primary-color;
       border-radius: 1.9rem;
       background-color: transparent;
@@ -2030,7 +2042,7 @@
       font-family: $font-bold;
       font-size: unquote('min(1vw, 1.3vw);');
       text-transform: uppercase;
-
+    }
       & > a {
         color: $primary-color;
         text-decoration: none;
@@ -2052,8 +2064,6 @@
     }
   }
 
-
-  //width: unquote('min(66%, 34.2vw)');
   //Right container with images and animation
   .imageContainer {
     position: relative;
@@ -2326,28 +2336,30 @@
     align-items: center;
     width: 59.5%;
     margin-top: unquote('min(4.1rem, 3.3vw)');
-
-    & > button {
-      width: 39%;
-      height: unquote('max(2.4vw, 220%)');
-      max-height: 218px;
-      border: 2px solid $primary-color;
-      border-radius: 1.9rem;
-      background-color: transparent;
+    & > a {
       color: $primary-color;
-      font-family: $font-bold;
-      font-size: unquote('min(1vw, 1.15rem)');
-      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 1.9rem;
 
-      & > a {
+      & > button {
+        width: unquote('max(9.2vw, 17.4vh)');
+        max-width: 232px;
+        height: unquote('max(2.4vw, 4.6vh)');
+        max-height: 218px;
+        border: 2px solid $primary-color;
+        border-radius: 1.9rem;
+        background-color: transparent;
         color: $primary-color;
-        text-decoration: none;
+        font-family: $font-bold;
+        font-size: unquote('min(1vw, 1.15rem)');
+        text-transform: uppercase;
+
       }
 
       &:hover {
         background-color: $primary-color;
 
-        a {
+        button {
           color: #000;
           text-decoration: none;
         }
