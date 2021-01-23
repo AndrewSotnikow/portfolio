@@ -40,7 +40,7 @@ class Home extends Component {
                             </div>
                             <div className={styles.buttons}>
                                 <a download
-                                   href="https://drive.google.com/file/d/1k3w7raez2hf9JFq4djp_sDIce4hY2eoc/view?usp=sharing"
+                                   href="https://drive.google.com/file/d/1ugzfxScdeOSiXXoKI-6Vrdv1zhrZvX6G/view?usp=sharing"
                                    target="_blank"
                                    rel="noopener noreferrer"
                                 >
